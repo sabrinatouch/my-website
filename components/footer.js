@@ -1,9 +1,15 @@
-import { Text, Box } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 const Footer = () => {
     return (
-        <Box h='auto' align="center" fontSize={12} pt={8} pb={8}>
-            © 2023 Sabrina Touch. All Rights Reserved. 
+        <Box 
+            align="center"
+            opacity={0.4}
+            fontSize={12}
+            mt='auto'
+            mb="32px"
+        >
+            &copy; {new Date().getFullYear()} Sabrina Touch. All Rights Reserved. 
         </Box>
     )
 }

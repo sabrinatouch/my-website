@@ -5,19 +5,18 @@ import Footer from '../footer'
 
 const Main = ({ children, router }) => {
     return (
-        <Box as="main">
+        <Box as="main" display="flex" flexDirection="column" minH="100vh">
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Navbar path={router.asPath} />
-            <Container maxW="container.md">
+            <Container mb="32px">
                 <Box w="100%" pt={6} pb={6} align="center">
                     three.js model goes here
                 </Box>
                 {children}
-
-                <Footer />
             </Container>
+            <Footer />
         </Box>
     )
 }

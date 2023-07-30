@@ -17,7 +17,7 @@ import {
  } from '@chakra-ui/react'
 import { HamburgerIcon, SmallCloseIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     return (
@@ -26,7 +26,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             as={NextLink}
             target={target}
             {...props}
-            pl={2}
         >
             {children}
         </Link>
@@ -73,6 +72,13 @@ const Navbar = props => {
                                 >
                                     <IoLogoGithub />
                                 </LinkItem>
+                                <LinkItem
+                                    href="https://linkedin.com/in/sabrinatouch"
+                                    path={path}
+                                    target="_blank"
+                                >
+                                    <IoLogoLinkedin />
+                                </LinkItem>
                             </Stack>
                         </Box>
                     </Box>
@@ -116,22 +122,30 @@ const Navbar = props => {
                     <VStack>
                         <Box>
                             <VStack>
-                                <Text>
+                                <LinkItem href="/works" path={path}>
                                     Works
-                                </Text>
-                                <Text>
+                                </LinkItem>
+                                <LinkItem href="/contact" path={path}>
                                     Contact
-                                </Text>
+                                </LinkItem>
                             </VStack>
                         </Box>
                         <Box pt={36}>
                             <HStack>
-                                <Text>
-                                    LinkedIn
-                                </Text>
-                                <Text>
-                                    GitHub
-                                </Text>
+                                <LinkItem
+                                    href="https://github.com/sabrinatouch"
+                                    path={path}
+                                    target="_blank"
+                                >
+                                    <IoLogoGithub />
+                                </LinkItem>
+                                <LinkItem
+                                    href="https://linkedin.com/in/sabrinatouch"
+                                    path={path}
+                                    target="_blank"
+                                >
+                                    <IoLogoLinkedin />
+                                </LinkItem>
                             </HStack>
                         </Box>
                     </VStack>

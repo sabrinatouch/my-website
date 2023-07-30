@@ -1,6 +1,7 @@
 import MagicHatIcon from "./images/magichat";
 import { Heading } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import Link from 'next/link'
 
 const LogoBox = styled.span`
     height: 30px;
@@ -15,9 +16,15 @@ const Logo = () => {
     return (
         <LogoBox>
             <MagicHatIcon />
-            <Heading variant="logo-title" ml={3} letterSpacing={'tighter'}>
-                Sabrina Touch
-            </Heading>
+            <Link href="/">
+                <Heading 
+                    variant="logo-title" 
+                    ml={3} 
+                    letterSpacing={'tighter'}
+                >
+                    Sabrina Touch
+                </Heading>
+            </Link>
         </LogoBox>
     )
 }
