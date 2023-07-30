@@ -5,7 +5,7 @@ const Footer = () => {
         <Box 
             align="center"
             opacity={0.4}
-            fontSize={12}
+            fontSize={14}
             mt='auto'
             mb="32px"
         >
