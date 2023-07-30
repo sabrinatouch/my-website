@@ -4,7 +4,6 @@ import styled from '@emotion/styled'
 import Link from 'next/link'
 
 const LogoBox = styled.span`
-    height: 30px;
     line-height: 20px;
     display: inline-flex;
     align-items: center;

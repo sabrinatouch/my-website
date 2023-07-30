@@ -20,12 +20,16 @@ import NextLink from 'next/link'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
+    const active = path === href
+    const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+
     return (
         <Link
             href={href}
             as={NextLink}
             target={target}
             {...props}
+            textDecoration={active ? 'underline' : 'none'}
         >
             {children}
         </Link>
