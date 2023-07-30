@@ -15,7 +15,7 @@ import {
     Link,
     Spacer
  } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, SmallCloseIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import { IoLogoGithub } from 'react-icons/io5'
 
@@ -48,6 +48,7 @@ const Navbar = props => {
                 bg={useColorModeValue('#ffffff40', '#20202380')}
                 {...props}
                 marginInline='auto'
+                zIndex={1}
             >
                 <Flex>
                     <Logo />
@@ -80,7 +81,7 @@ const Navbar = props => {
                             <IconButton
                                 onClick={onToggle}
                                 aria-label="Nav menu"
-                                icon={<HamburgerIcon />}
+                                icon={isOpen ? <SmallCloseIcon /> : <HamburgerIcon />}
                             ></IconButton>
                         </Box>
                     </Box>
