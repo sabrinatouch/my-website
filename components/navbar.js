@@ -44,7 +44,7 @@ const Navbar = props => {
                 maxW="5xl"
                 position="relative"
                 p={8}
-                bg={useColorModeValue('#ffffff40', '#20202380')}
+                bg={useColorModeValue('#ffffff', '#202023')}
                 {...props}
                 marginInline='auto'
                 zIndex={1}
@@ -93,20 +93,6 @@ const Navbar = props => {
                     </Box>
                 </Flex>
             </Box>
-            <Fade in={isOpen} unmountOnExit>
-                <Box
-                    position='absolute'
-                    w='100%'
-                    bg='#ffffff40'
-                    css={{ backdropFilter: 'blur(10px)' }}
-                    top='72px'
-                    zIndex={1}
-                    left='0'
-                    bottom='0'
-                    display={{ base: 'flex', md: 'none' }}
-                >
-                </Box>
-            </Fade>
             <SlideFade in={isOpen} unmountOnExit>
                 <Container
                     zIndex={2}
@@ -122,10 +108,13 @@ const Navbar = props => {
                     <VStack>
                         <Box>
                             <VStack>
-                                <LinkItem href="/works" path={path}>
+                                <LinkItem onClick={onToggle} href="/" path={path}>
+                                    Home
+                                </LinkItem>
+                                <LinkItem onClick={onToggle} href="/works" path={path}>
                                     Works
                                 </LinkItem>
-                                <LinkItem href="/contact" path={path}>
+                                <LinkItem onClick={onToggle} href="/contact" path={path}>
                                     Contact
                                 </LinkItem>
                             </VStack>
@@ -151,6 +140,20 @@ const Navbar = props => {
                     </VStack>
                 </Container>
             </SlideFade>
+            <Fade in={isOpen} unmountOnExit>
+                <Box
+                    position='absolute'
+                    w='100%'
+                    bg='#ffffff60'
+                    css={{ backdropFilter: 'blur(10px)' }}
+                    top='72px'
+                    zIndex={1}
+                    left='0'
+                    bottom='0'
+                    display={{ base: 'flex', md: 'none' }}
+                >
+                </Box>
+            </Fade>
         </Box>
     )
 }
