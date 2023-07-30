@@ -104,6 +104,9 @@ const Navbar = props => {
                     position='fixed'
                     height='100vh'
                     display={{ base: 'flex', md: 'none' }}
+                    bg='#ffffff60'
+                    backdropFilter='auto'
+                    backdropBlur='8px'
                 >
                     <VStack>
                         <Box>
@@ -140,20 +143,6 @@ const Navbar = props => {
                     </VStack>
                 </Container>
             </SlideFade>
-            <Fade in={isOpen} unmountOnExit>
-                <Box
-                    position='absolute'
-                    w='100%'
-                    bg='#ffffff60'
-                    css={{ backdropFilter: 'blur(10px)' }}
-                    top='72px'
-                    zIndex={1}
-                    left='0'
-                    bottom='0'
-                    display={{ base: 'flex', md: 'none' }}
-                >
-                </Box>
-            </Fade>
         </Box>
     )
 }
