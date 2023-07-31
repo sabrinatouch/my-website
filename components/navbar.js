@@ -102,7 +102,6 @@ const Navbar = props => {
                     alignItems='center'
                     justifyContent='center'
                     align='center'
-                    color={useColorModeValue('darkGrey', 'poopyPurple')}
                     fontSize='24'
                     position='fixed'
                     height='100vh'
