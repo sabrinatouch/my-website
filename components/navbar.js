@@ -73,14 +73,14 @@ const Navbar = props => {
                                     path={path}
                                     target="_blank"
                                 >
-                                    <IoLogoGithub />
+                                    <IoLogoGithub font-size='20px' />
                                 </LinkItem>
                                 <LinkItem
                                     href="https://linkedin.com/in/sabrinatouch"
                                     path={path}
                                     target="_blank"
                                 >
-                                    <IoLogoLinkedin />
+                                    <IoLogoLinkedin font-size='20px'/>
                                 </LinkItem>
                             </Stack>
                         </Box>
@@ -102,7 +102,7 @@ const Navbar = props => {
                     alignItems='center'
                     justifyContent='center'
                     align='center'
-                    fontSize='24'
+                    fontSize='30'
                     position='fixed'
                     height='100vh'
                     display={{ base: 'flex', md: 'none' }}
