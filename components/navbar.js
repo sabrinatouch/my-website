@@ -102,7 +102,7 @@ const Navbar = props => {
                     alignItems='center'
                     justifyContent='center'
                     align='center'
-                    color='darkGrey'
+                    color={useColorModeValue('darkGrey', 'poopyPurple')}
                     fontSize='24'
                     position='fixed'
                     height='100vh'
@@ -147,7 +147,7 @@ const Navbar = props => {
                 <Box
                     as='bgbox'
                     position='absolute'
-                    bg='#ffffff60'
+                    bg={useColorModeValue('#ffffff60', '#20202360')}
                     backdropFilter='auto'
                     backdropBlur='10px'
                     w='100%'
