@@ -22,6 +22,7 @@ const WorksItem = ({ id, thumbnail, title, description }) => {
                     <Image 
                         src={thumbnail}
                         alt={title}
+                        borderRadius='50%'
                     />
                     <CardBody alignSelf={'flex-start'}>
                         <Text variant='work-item-title'>

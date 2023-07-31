@@ -20,7 +20,7 @@ const Logo = () => {
             <Link href="/">
                 <Heading 
                     variant="logo-title" 
-                    ml={3} 
+                    ml={2} 
                     letterSpacing={'tighter'}
                 >
                     Sabrina Touch
