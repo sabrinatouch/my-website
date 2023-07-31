@@ -10,7 +10,7 @@ const Main = ({ children, router }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Navbar path={router.asPath} />
-            <Container mb="32px" pl={8} pr={8}>
+            <Container mb="32px" pt={4} pl={8} pr={8}>
                 <AspectRatio maxW="100%">
                     <Box bg='#00cf00' display="inline-flex" justifyContent="center" alignItems="center">
                         <Text>Three.js model goes here</Text>

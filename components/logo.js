@@ -2,6 +2,7 @@ import MagicHatIcon from "./images/magichat";
 import { Heading } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import Link from 'next/link'
+import ThemeToggleButton from "./theme-toggle-button";
 
 const LogoBox = styled.span`
     line-height: 20px;
@@ -14,7 +15,8 @@ const LogoBox = styled.span`
 const Logo = () => {
     return (
         <LogoBox>
-            <MagicHatIcon />
+            <ThemeToggleButton />
+            {/* <MagicHatIcon /> */}
             <Link href="/">
                 <Heading 
                     variant="logo-title" 
