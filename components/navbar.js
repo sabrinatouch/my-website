@@ -21,7 +21,6 @@ import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
-    const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
 
     return (
         <Link
@@ -29,7 +28,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             as={NextLink}
             target={target}
             {...props}
-            textDecoration={active ? 'underline' : 'none'}
+            // textDecoration={active ? 'underline' : 'none'}
         >
             {children}
         </Link>
@@ -108,9 +107,6 @@ const Navbar = props => {
                     position='fixed'
                     height='100vh'
                     display={{ base: 'flex', md: 'none' }}
-                    bg='#ffffff60'
-                    backdropFilter='auto'
-                    backdropBlur='8px'
                 >
                     <VStack>
                         <Box>
@@ -147,6 +143,22 @@ const Navbar = props => {
                     </VStack>
                 </Container>
             </SlideFade>
+            <Fade in={isOpen} unmountOnExit>
+                <Box
+                    as='bgbox'
+                    position='absolute'
+                    bg='#ffffff60'
+                    backdropFilter='auto'
+                    backdropBlur='10px'
+                    w='100%'
+                    zIndex={1}
+                    top='72px'
+                    left='0'
+                    bottom='0'
+                    display={{ base: 'flex', md: 'none' }}
+                >
+                </Box>
+            </Fade>
         </Box>
     )
 }
