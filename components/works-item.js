@@ -9,9 +9,15 @@ import {
     Box,
     VStack,
     Divider,
-    LinkBox
+    LinkBox,
+    chakra
 } from '@chakra-ui/react'
 import Image from 'next/image'
+import Section from '../components/section'
+
+const ThumbnailImage = chakra(Image, {
+    shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop)
+}); 
 
 const WorksItem = ({ id, thumbnail, title, description }) => {
     return (
@@ -19,11 +25,14 @@ const WorksItem = ({ id, thumbnail, title, description }) => {
             <LinkBox as={NextLink} href={`/works/${id}`}>
             <Card variant={'unstyled'}>
                 <VStack spacing={4}>
-                    <Image 
-                        src={thumbnail}
-                        alt={title}
-                        borderRadius='50%'
-                    />
+                    <Section delay={0.2}>
+                        <ThumbnailImage 
+                            src={thumbnail}
+                            alt={title}
+                            width={1920}
+                            height={'auto'}
+                        />
+                    </Section>
                     <CardBody alignSelf={'flex-start'}>
                         <Text variant='work-item-title'>
                             {title}

@@ -2,10 +2,14 @@ import {
     Container,
     Text,
     Box,
-    Heading
+    Heading,
+    SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
-import WorksContent from '../components/works-content'
+import WorksItem from '../components/works-item'
+
+import thumbnail_bobatouch from '../public/thumbnail_bobatouch.png'
+import thumbnail_placeholder from '../public/thumbnail_placeholder.png'
 
 const Works = () => {
     return (
@@ -14,7 +18,10 @@ const Works = () => {
                 <Heading variant='section-title' letterSpacing={'tighter'}>
                     Works
                 </Heading>
-                <WorksContent />
+                <SimpleGrid>
+                    <WorksItem id={'bobatouch'} thumbnail={thumbnail_bobatouch} title={'Boba Touch'} description={'This is a description'} />
+                    <WorksItem id={'placeholder'} thumbnail={thumbnail_placeholder} title={'Placeholder Work'} description={'This is a description'} />
+                </SimpleGrid>
             </Section>
         </Box>
     )
