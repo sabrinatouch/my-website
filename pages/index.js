@@ -17,7 +17,7 @@ const Home = () => {
             <Container p={0}>
               <AspectRatio maxW="100%">
                 <Box as='threejsmodel' bg='#00cf00' display="inline-flex" justifyContent="center" alignItems="center">
-                    <Text>Three.js model goes here</Text>
+                    <Text>Three.js model goes here or I guess above here</Text>
                 </Box>
               </AspectRatio>
             </Container>
