@@ -1,16 +1,15 @@
 import React, { useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useGLTF, Stage, Grid, OrbitControls, Environment } from '@react-three/drei'
-import { EffectComposer, Bloom } from '@react-three/postprocessing'
-// import { easing } from 'maath'
+import { useGLTF, Stage, OrbitControls } from '@react-three/drei'
 
 export default function ModelTest() {
   return (
-    <Canvas gl={{ logarithmicDepthBuffer: true }} shadows camera={{ position: [-10, 3, 10], fov: 10}}>
+    <Canvas shadows camera={{ position: [-10, 3, 10], fov: 15}}>
+        <ambientLight />
         <Stage adjustCamera={false}>
             <Model />
         </Stage>
-        <OrbitControls enableRotate={false} makeDefault autoRotateSpeed={0.5} minAzimuthAngle={Math.PI / 4} />
+        <OrbitControls autoRotateSpeed={0.5} minPolarAngle={Math.PI / 2.5} maxPolarAngle={Math.PI - Math.PI / 2} minAzimuthAngle={-Math.PI / 3} maxAzimuthAngle={Math.PI / 3} />
     </Canvas>
   )
 }
@@ -23,8 +22,15 @@ Files: myroom.glb [4.27MB] > myroom-transformed.glb [472.56KB] (89%)
 
 export function Model(props) {
   const { nodes, materials } = useGLTF('/myroom-transformed.glb')
+
+  const myMesh = React.useRef();
+
+  useFrame(({ clock }) => {
+    myMesh.current.rotation.y = Math.sin(Date.now() * 0.00015) * Math.PI * 0.15;
+  });
+
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} ref={myMesh}>
       <mesh geometry={nodes['floor_-_wood'].geometry} material={materials.PaletteMaterial001} position={[-0.006, -0.04, 0.008]} />
       <mesh geometry={nodes.mug.geometry} material={nodes.mug.material} position={[-0.69, 0.816, -0.648]} />
       <mesh geometry={nodes['mug_-_liquid'].geometry} material={materials.PaletteMaterial002} position={[-0.69, 0.816, -0.648]} />

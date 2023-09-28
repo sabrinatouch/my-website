@@ -8,6 +8,7 @@ import {
     AspectRatio
 } from '@chakra-ui/react'
 import Section from '../components/section'
+import ModelTest from '../components/modeltest'
 
 const Home = () => {
     return (
@@ -16,8 +17,8 @@ const Home = () => {
           <VStack spacing={8}>
             <Container p={0}>
               <AspectRatio maxW="100%">
-                <Box as='threejsmodel' bg='#00cf00' display="inline-flex" justifyContent="center" alignItems="center">
-                    <Text>Three.js model goes here or I guess above here</Text>
+                <Box as='threejsmodel' display="inline-flex" justifyContent="center" alignItems="center">
+                  <ModelTest />
                 </Box>
               </AspectRatio>
             </Container>
