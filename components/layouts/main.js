@@ -3,6 +3,7 @@ import Navbar from '../navbar'
 import Head from 'next/head'
 import Footer from '../footer'
 import Room from '../room'
+import ModelTest from '../modeltest'
 
 const Main = ({ children, router }) => {
     return (
@@ -12,7 +13,8 @@ const Main = ({ children, router }) => {
             </Head>
             <Navbar path={router.asPath} />
             <Container maxW='4xl' mt='auto' mb="32px" pl={8} pr={8}>
-                <Room />
+                {/* <Room /> */}
+                <ModelTest />
                 {children}
             </Container>
             <Footer />
