@@ -4,12 +4,12 @@ import { useGLTF, Stage, OrbitControls } from '@react-three/drei'
 
 export default function ModelTest() {
   return (
-    <Canvas shadows camera={{ position: [-10, 3, 10], fov: 15}}>
+    <Canvas shadows camera={{ position: [-10, 4, 10], fov: 15}}>
         <ambientLight />
         <Stage adjustCamera={false}>
             <Model />
         </Stage>
-        <OrbitControls autoRotateSpeed={0.5} minPolarAngle={Math.PI / 2.5} maxPolarAngle={Math.PI - Math.PI / 2} minAzimuthAngle={-Math.PI / 3} maxAzimuthAngle={Math.PI / 3} />
+        {/* <OrbitControls minPolarAngle={Math.PI / 2.5} maxPolarAngle={Math.PI - Math.PI / 2} minAzimuthAngle={-Math.PI / 5} maxAzimuthAngle={Math.PI / 2.5} /> */}
     </Canvas>
   )
 }
