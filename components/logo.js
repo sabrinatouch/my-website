@@ -9,7 +9,6 @@ const LogoBox = styled.span`
     display: inline-flex;
     align-items: center;
     font-weight: 700;
-    font-style: italic;
 `
 
 const Logo = () => {
@@ -21,7 +20,6 @@ const Logo = () => {
                 <Heading 
                     variant="logo-title" 
                     ml={2} 
-                    letterSpacing={'tighter'}
                 >
                     Sabrina Touch
                 </Heading>
