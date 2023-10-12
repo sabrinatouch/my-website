@@ -2,8 +2,6 @@ import { Box, Container, Text, AspectRatio } from '@chakra-ui/react'
 import Navbar from '../navbar'
 import Head from 'next/head'
 import Footer from '../footer'
-import Room from '../room'
-import ModelTest from '../modeltest'
 
 const Main = ({ children, router }) => {
     return (

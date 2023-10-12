@@ -9,7 +9,6 @@ export default function ModelTest() {
         <Stage adjustCamera={false}>
             <Model />
         </Stage>
-        {/* <OrbitControls minPolarAngle={Math.PI / 2.5} maxPolarAngle={Math.PI - Math.PI / 2} minAzimuthAngle={-Math.PI / 5} maxAzimuthAngle={Math.PI / 2.5} /> */}
     </Canvas>
   )
 }
@@ -25,7 +24,7 @@ export function Model(props) {
 
   const myMesh = React.useRef();
 
-  useFrame(({ clock }) => {
+  useFrame(() => {
     myMesh.current.rotation.y = Math.sin(Date.now() * 0.00015) * Math.PI * 0.15;
   });
 
