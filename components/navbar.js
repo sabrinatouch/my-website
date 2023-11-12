@@ -114,13 +114,13 @@ const Navbar = props => {
                     <VStack>
                         <Box>
                             <VStack>
-                                <LinkItem onClick={onToggle} href="/" path={path}>
+                                <LinkItem fontSize={42} onClick={onToggle} href="/" path={path}>
                                     Home
                                 </LinkItem>
-                                <LinkItem onClick={onToggle} href="/works" path={path}>
+                                <LinkItem fontSize={42} onClick={onToggle} href="/works" path={path}>
                                     Works
                                 </LinkItem>
-                                <LinkItem onClick={onToggle} href="/contact" path={path}>
+                                <LinkItem fontSize={42} onClick={onToggle} href="/contact" path={path}>
                                     Contact
                                 </LinkItem>
                             </VStack>
@@ -132,16 +132,19 @@ const Navbar = props => {
                                     path={path}
                                     target="_blank"
                                 >
-                                    <IoLogoGithub />
+                                    <IoLogoGithub font-size='42px'/>
                                 </LinkItem>
                                 <LinkItem
                                     href="https://linkedin.com/in/sabrinatouch"
                                     path={path}
                                     target="_blank"
                                 >
-                                    <IoLogoLinkedin />
+                                    <IoLogoLinkedin font-size='42px' />
                                 </LinkItem>
                             </HStack>
+                        </Box>
+                        <Box>
+                            <ThemeToggleButton />
                         </Box>
                     </VStack>
                 </Container>

@@ -22,7 +22,7 @@ const Home = () => {
                 </Box>
               </AspectRatio>
             </Container>
-            <Heading>Hello, my name is Sabrina!</Heading>
+            <Heading variant="section-title">Hello, my name is Sabrina!</Heading>
             <Text>
               I am a Cambodian-American UI Developer based in Colorado who enjoys being creative through design and code.
             </Text>
