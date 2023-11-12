@@ -19,7 +19,7 @@ const Logo = () => {
             <Link href="/">
                 <Heading 
                     variant="logo-title" 
-                    ml={2} 
+                    ml={2}
                 >
                     Sabrina Touch
                 </Heading>

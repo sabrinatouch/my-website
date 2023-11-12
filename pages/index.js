@@ -22,11 +22,18 @@ const Home = () => {
                 </Box>
               </AspectRatio>
             </Container>
+            <Heading>Hello, my name is Sabrina!</Heading>
             <Text>
-              I&apos;m Sabrina, the <Text as="s">teenage witch</Text> 25 year-old UI Engineer with a magic touch.
+              I am a Cambodian-American UI Developer based in Colorado who enjoys being creative through design and code.
             </Text>
             <Text> 
-              Welcome to my cyber sanctuary where I showcase what I've conjured and crafted on my electronic cauldron.
+              On the side, I am a volleyball player. I participated and helped debut the first Cambodian Women's National Beach Volleyball Team for the 2023 Southeast Asian Games (SEA Games). Learn more about my experience on the team here.
+            </Text>
+            <Text> 
+              My other hobbies include karaoke, learning languages, and documenting my life through photos and videos. If you'd like to get to know me more, you can check out my experiences, projects, or feel free to contact me directly!
+            </Text>
+            <Text>
+              Otherwise, thanks for stopping by~
             </Text>
           </VStack>
         </Section>
