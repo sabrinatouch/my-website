@@ -1,8 +1,7 @@
-import MagicHatIcon from "./images/magichat";
 import { Heading } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import Link from 'next/link'
-import ThemeToggleButton from "./theme-toggle-button";
+import Image from 'next/image'
 
 const LogoBox = styled.span`
     line-height: 20px;
@@ -14,8 +13,13 @@ const LogoBox = styled.span`
 const Logo = () => {
     return (
         <LogoBox>
-            <ThemeToggleButton />
-            {/* <MagicHatIcon /> */}
+            <Image 
+                src="/favicon.ico"
+                width={40}
+                height={40}
+                style={{borderRadius: '5px'}}
+                alt="self portrait drawing of Sabrina"
+            />
             <Link href="/">
                 <Heading 
                     variant="logo-title" 

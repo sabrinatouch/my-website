@@ -18,12 +18,14 @@ import {
 import { HamburgerIcon, SmallCloseIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import ThemeToggleButton from "./theme-toggle-button";
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
 
     return (
         <Link
+            fontSize='20px'
             href={href}
             as={NextLink}
             target={target}
@@ -44,6 +46,7 @@ const Navbar = props => {
             <Box
                 as="nav"
                 w="100%"
+                h="104px"
                 maxW="5xl"
                 position="relative"
                 p={8}
@@ -59,8 +62,8 @@ const Navbar = props => {
                         <Box pl={2} align="right" display={{ base: 'none', md: 'inline-block'}}>
                             <Stack
                                 direction={{ base: 'none', md: 'row' }}
-                                alignItems="center"
-                                h='30px'
+                                alignItems='center'
+                                h='40px'
                             >
                                 <LinkItem href="/works" path={path}>
                                     Works
@@ -82,6 +85,7 @@ const Navbar = props => {
                                 >
                                     <IoLogoLinkedin font-size='20px'/>
                                 </LinkItem>
+                                <ThemeToggleButton />
                             </Stack>
                         </Box>
                     </Box>
@@ -151,7 +155,7 @@ const Navbar = props => {
                     backdropBlur='10px'
                     w='100%'
                     zIndex={1}
-                    top='72px'
+                    top='104px'
                     left='0'
                     bottom='0'
                     display={{ base: 'flex', md: 'none' }}
