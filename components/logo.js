@@ -13,20 +13,20 @@ const LogoBox = styled.span`
 const Logo = () => {
     return (
         <LogoBox>
-            <Image 
-                src="/favicon.ico"
-                width={40}
-                height={40}
-                style={{borderRadius: '5px'}}
-                alt="self portrait drawing of Sabrina"
-            />
             <Link href="/">
-                <Heading 
+                <Image 
+                    src="/favicon.ico"
+                    width={40}
+                    height={40}
+                    style={{borderRadius: '5px'}}
+                    alt="self portrait drawing of Sabrina"
+                />
+                {/* <Heading 
                     variant="logo-title" 
                     ml={2}
                 >
                     Sabrina Touch
-                </Heading>
+                </Heading> */}
             </Link>
         </LogoBox>
     )

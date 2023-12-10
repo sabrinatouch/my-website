@@ -47,7 +47,7 @@ const Navbar = props => {
                 as="nav"
                 w="100%"
                 h="104px"
-                maxW="5xl"
+                maxW="6xl"
                 position="relative"
                 p={8}
                 bg={useColorModeValue('#ffffff', '#202023')}
@@ -85,7 +85,6 @@ const Navbar = props => {
                                 >
                                     <IoLogoLinkedin font-size='20px'/>
                                 </LinkItem>
-                                <ThemeToggleButton />
                             </Stack>
                         </Box>
                     </Box>
@@ -142,9 +141,6 @@ const Navbar = props => {
                                     <IoLogoLinkedin font-size='42px' />
                                 </LinkItem>
                             </HStack>
-                        </Box>
-                        <Box>
-                            <ThemeToggleButton />
                         </Box>
                     </VStack>
                 </Container>

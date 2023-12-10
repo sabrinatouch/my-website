@@ -44,17 +44,17 @@ const Work = () => {
                 </Text>
                 </Box>
                 <Box>
-                <UnorderedList>
-                    <ListItem>
-                        test
-                    </ListItem>
-                    <ListItem>
-                        test
-                    </ListItem>
-                    <ListItem>
-                        test
-                    </ListItem>
-                </UnorderedList>
+                    <UnorderedList>
+                        <ListItem>
+                            test
+                        </ListItem>
+                        <ListItem>
+                            test
+                        </ListItem>
+                        <ListItem>
+                            test
+                        </ListItem>
+                    </UnorderedList>
                 </Box>
                 </SimpleGrid>
             </Section>
