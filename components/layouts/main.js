@@ -10,10 +10,10 @@ const Main = ({ children, router }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Navbar path={router.asPath} />
-            <Container maxW='6xl' mt='auto' mb="32px" pl={8} pr={8}>
+            <Container maxW='6xl' pl={8} pr={8}>
                 {children}
             </Container>
-            <Footer />
+            {/* <Footer /> */}
         </Box>
     )
 }
