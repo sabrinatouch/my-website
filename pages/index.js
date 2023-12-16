@@ -61,6 +61,9 @@ const Home = () => {
             </Box>
           </SpringAnimation>
         </Box>
+        <Box mt={32}>
+          <Works2 />
+        </Box>
       </Box>
     )
 }

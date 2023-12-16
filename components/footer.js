@@ -6,10 +6,11 @@ const Footer = () => {
             align="center"
             opacity={0.4}
             fontSize={14}
-            mt='auto'
-            mb="32px"
+            mt={16}
+            mb={16}
         >
-            &copy; {new Date().getFullYear()} Sabrina Touch. All Rights Reserved. 
+            {/* &copy; {new Date().getFullYear()} Sabrina Touch. All Rights Reserved.  */}
+            Thanks for stopping by!
         </Box>
     )
 }

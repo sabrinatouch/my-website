@@ -13,7 +13,7 @@ const Main = ({ children, router }) => {
             <Container maxW='6xl' pl={8} pr={8}>
                 {children}
             </Container>
-            {/* <Footer /> */}
+            <Footer />
         </Box>
     )
 }
