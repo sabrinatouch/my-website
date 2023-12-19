@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
     Box,
     Button,
@@ -8,64 +9,102 @@ import {
     FormErrorMessage,
     Input,
     VStack,
-    Heading
+    Heading,
+    Textarea
 } from '@chakra-ui/react'
-import { Formik, Form, Field } from "formik";
+import { sendContactForm } from "../lib/api";
+
+const initValues = { 
+    name: "",
+    email: "",
+    message: ""
+};
+
+const initState = { values: initValues };
 
 const ContactForm = () => {
+    const [state, setState] = useState(initState);
+    const [touched, setTouched] = useState({});
+    const { values, isLoading } = state;
+
+    const onBlur = ({target}) => setTouched((prev) => ({...prev,
+        [target.name]: true
+    }))
+
+    const handleChange = ({target}) => setState((prev) => ({
+        ...prev, //spread out prev bc if we have other properties on the state object, we want to retain those
+        values: {
+            ...prev.values,
+            [target.name]: target.value,
+        }
+    }))
+
+    const onSubmit = async () => {
+        setState((prev) => ({
+            ...prev,
+            isLoading: true
+        }));
+        await sendContactForm(values)
+    }
+
     return (
         <Flex bg="gray.100">
             <Box bg="white" rounded="md" w={64}>
-                <Formik
-                    initialValues={{
-                        firstname: "",
-                        email: "",
-                        message: ""
-                    }}
-                    onSubmit={(values) => {
-                        alert(JSON.stringify(values, null, 2));
-                    }}
-                >
-                {({ handleSubmit, errors, touched }) => (
-                    <Form onSubmit={handleSubmit}>
-                        <VStack spacing={4} align="flex-start">
-                            <FormControl>
-                                <FormLabel htmlFor="name">Name</FormLabel>
-                                <Field
-                                    as={Input}
-                                    id="name"
-                                    name="name"
-                                    type="name"
-                                    variant="filled"
-                                />
-                            </FormControl>
-                            <FormControl>
-                                <FormLabel htmlFor="email">Email Address</FormLabel>
-                                <Field
-                                    as={Input}
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    variant="filled"
-                                />
-                            </FormControl>
-                            <FormControl>
-                                <FormLabel htmlFor="message">Message</FormLabel>
-                                <Field
-                                    as={Input}
-                                    id="message"
-                                    name="message"
-                                    type="message"
-                                    variant="filled"
-                                />
-                            </FormControl>
-                            <Button type="submit" colorScheme="purple" width="full">
-                                Send
-                            </Button>
-                        </VStack>
-                    </Form>
-                )}
-                </Formik>
+                <VStack spacing={4} align="flex-start">
+                    <FormControl isRequired ininvalid={touched.name && !values.name}>
+                        <FormLabel htmlFor="name">Name</FormLabel>
+                        <Input
+                            id="name"
+                            name="name"
+                            type="text"
+                            errorBorderColor="red.300"
+                            variant="filled"
+                            value={values.name}
+                            onChange={handleChange}
+                            onBlur={onBlur}
+                        />
+                        <FormErrorMessage>Required</FormErrorMessage>
+                    </FormControl>
+                    <FormControl isRequired ininvalid={touched.email && !values.email}>
+                        <FormLabel htmlFor="name">Email</FormLabel>
+                        <Input
+                            id="email"
+                            name="email"
+                            type="text"
+                            errorBorderColor="red.300"
+                            variant="filled"
+                            value={values.email}
+                            onChange={handleChange}
+                            onBlur={onBlur}
+                        />
+                        <FormErrorMessage>Required</FormErrorMessage>
+                    </FormControl>
+                    <FormControl isRequired ininvalid={touched.message && !values.message}>
+                        <FormLabel htmlFor="name">Message</FormLabel>
+                        <Textarea
+                            id="message"
+                            name="message"
+                            type="text"
+                            variant="filled"
+                            errorBorderColor="red.300"
+                            rows={4}
+                            value={values.message}
+                            onChange={handleChange}
+                            onBlur={onBlur}
+                        />
+                        <FormErrorMessage>Required</FormErrorMessage>
+                    </FormControl>
+                    <Button 
+                        type="submit" 
+                        colorScheme="purple" 
+                        width="full"
+                        isLoading={isLoading}
+                        disabled={!values.name || !values.email || !values.message}
+                        onClick={onSubmit}
+                    >
+                        Send
+                    </Button>
+                </VStack>
             </Box>
         </Flex>
     )
