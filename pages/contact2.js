@@ -12,11 +12,11 @@ const Contact2 = () => {
                 Get in touch...
             </Heading>
             <Heading variant="section-title" mt={0}>
-                with me, Sabrina Touch :)
+                with the Touch :)
             </Heading>
             <Box display={{ md: 'flex' }}>
                 <Box w={{ md: '50%', base: '100%' }}>
-                    <Box h={500} bgColor={'gray.100'}>
+                    <Box h={500} bgColor={'gray.100'} borderRadius='10px'>
                         <Text>
                             Download Resume
                         </Text>

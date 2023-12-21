@@ -65,6 +65,9 @@ const Navbar = props => {
                                 alignItems='center'
                                 h='40px'
                             >
+                                <LinkItem href="/about" path={path}>
+                                    About
+                                </LinkItem>
                                 <LinkItem href="/works" path={path}>
                                     Works
                                 </LinkItem>

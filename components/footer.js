@@ -56,10 +56,24 @@ const Footer = props => {
                     >
                         <IoLogoLinkedin font-size='20px'/>
                     </LinkItem>
+                    <LinkItem
+                        href=""
+                        path={path}
+                        target="_blank"    
+                    >
+                        instagram
+                    </LinkItem>
+                    <LinkItem
+                        href=""
+                        path={path}
+                        target="_blank"    
+                    >
+                        youtube
+                    </LinkItem>
                 </HStack>
             </Box>
             <Box mt={4}>
-                <Text textColor={'gray.400'}>Thanks for stopping by!</Text>
+                <Text>Thanks for stopping by!</Text>
             </Box>
         </Box>
     )
