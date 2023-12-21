@@ -71,20 +71,6 @@ const Navbar = props => {
                                 <LinkItem href="/contact" path={path}>
                                     Contact
                                 </LinkItem>
-                                <LinkItem
-                                    href="https://github.com/sabrinatouch"
-                                    path={path}
-                                    target="_blank"
-                                >
-                                    <IoLogoGithub font-size='20px' />
-                                </LinkItem>
-                                <LinkItem
-                                    href="https://linkedin.com/in/sabrinatouch"
-                                    path={path}
-                                    target="_blank"
-                                >
-                                    <IoLogoLinkedin font-size='20px'/>
-                                </LinkItem>
                             </Stack>
                         </Box>
                     </Box>

@@ -11,8 +11,9 @@ const Works2 = () => {
     return (
       <Section delay={0.2}>
         <Heading variant="section-title">
-          Works
+          Works & Projects
         </Heading>
+        <WorkItem2 />
         <WorkItem2 />
         <WorkItem2 />
       </Section>

@@ -48,65 +48,63 @@ const ContactForm = () => {
     }
 
     return (
-        <Flex bg="gray.100">
-            <Box bg="white" rounded="md" w={64}>
-                <VStack spacing={4} align="flex-start">
-                    <FormControl isRequired ininvalid={touched.name && !values.name}>
-                        <FormLabel htmlFor="name">Name</FormLabel>
-                        <Input
-                            id="name"
-                            name="name"
-                            type="text"
-                            errorBorderColor="red.300"
-                            variant="filled"
-                            value={values.name}
-                            onChange={handleChange}
-                            onBlur={onBlur}
-                        />
-                        <FormErrorMessage>Required</FormErrorMessage>
-                    </FormControl>
-                    <FormControl isRequired ininvalid={touched.email && !values.email}>
-                        <FormLabel htmlFor="name">Email</FormLabel>
-                        <Input
-                            id="email"
-                            name="email"
-                            type="text"
-                            errorBorderColor="red.300"
-                            variant="filled"
-                            value={values.email}
-                            onChange={handleChange}
-                            onBlur={onBlur}
-                        />
-                        <FormErrorMessage>Required</FormErrorMessage>
-                    </FormControl>
-                    <FormControl isRequired ininvalid={touched.message && !values.message}>
-                        <FormLabel htmlFor="name">Message</FormLabel>
-                        <Textarea
-                            id="message"
-                            name="message"
-                            type="text"
-                            variant="filled"
-                            errorBorderColor="red.300"
-                            rows={4}
-                            value={values.message}
-                            onChange={handleChange}
-                            onBlur={onBlur}
-                        />
-                        <FormErrorMessage>Required</FormErrorMessage>
-                    </FormControl>
-                    <Button 
-                        type="submit" 
-                        colorScheme="purple" 
-                        width="full"
-                        isLoading={isLoading}
-                        disabled={!values.name || !values.email || !values.message}
-                        onClick={onSubmit}
-                    >
-                        Send
-                    </Button>
-                </VStack>
-            </Box>
-        </Flex>
+        <Box pl={4} pr={4}>
+            <VStack spacing={4} align="flex-start">
+                <FormControl isRequired ininvalid={touched.name && !values.name}>
+                    <FormLabel htmlFor="name">Name</FormLabel>
+                    <Input
+                        id="name"
+                        name="name"
+                        type="text"
+                        errorBorderColor="red.300"
+                        variant="filled"
+                        value={values.name}
+                        onChange={handleChange}
+                        onBlur={onBlur}
+                    />
+                    <FormErrorMessage>Required</FormErrorMessage>
+                </FormControl>
+                <FormControl isRequired ininvalid={touched.email && !values.email}>
+                    <FormLabel htmlFor="name">Email</FormLabel>
+                    <Input
+                        id="email"
+                        name="email"
+                        type="text"
+                        errorBorderColor="red.300"
+                        variant="filled"
+                        value={values.email}
+                        onChange={handleChange}
+                        onBlur={onBlur}
+                    />
+                    <FormErrorMessage>Required</FormErrorMessage>
+                </FormControl>
+                <FormControl isRequired ininvalid={touched.message && !values.message}>
+                    <FormLabel htmlFor="name">Message</FormLabel>
+                    <Textarea
+                        id="message"
+                        name="message"
+                        type="text"
+                        variant="filled"
+                        errorBorderColor="red.300"
+                        rows={4}
+                        value={values.message}
+                        onChange={handleChange}
+                        onBlur={onBlur}
+                    />
+                    <FormErrorMessage>Required</FormErrorMessage>
+                </FormControl>
+                <Button 
+                    type="submit" 
+                    colorScheme="purple" 
+                    width="full"
+                    isLoading={isLoading}
+                    disabled={!values.name || !values.email || !values.message}
+                    onClick={onSubmit}
+                >
+                    Send
+                </Button>
+            </VStack>
+        </Box>
     )
 }
 

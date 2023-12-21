@@ -11,6 +11,7 @@ import SpringAnimation from '../components/springanimation'
 import ModelTest from '../components/modeltest'
 import Works2 from '../pages/works2'
 import Contact2 from '../pages/contact2'
+import AboutMe from '../pages/aboutme'
 
 const Home = () => {
     return (
@@ -51,6 +52,9 @@ const Home = () => {
               />
             </Box>
           </SpringAnimation>
+        </Box>
+        <Box mt={32}>
+          <AboutMe />
         </Box>
         <Box mt={32}>
           <Works2 />
