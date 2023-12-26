@@ -38,6 +38,9 @@ const AboutMe = () => {
                         <Text>
                             [THESE DAYS...] When I'm relaxing, I indulge in PC gaming, with Lost Ark being my current favorite, and also enjoy having solo karaoke jams in my home.
                         </Text>
+                        <Text>
+                            THIS IS TEST CODE
+                        </Text>
                     </VStack>
                     <Box h={500} w={2} bgColor={'blue.200'} borderRadius='10px' ml={6} mr={6} mt={2} mb={2}></Box>
                 </Box>
