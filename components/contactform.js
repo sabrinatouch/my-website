@@ -10,7 +10,8 @@ import {
     Input,
     VStack,
     Heading,
-    Textarea
+    Textarea,
+    Text
 } from '@chakra-ui/react'
 import { sendContactForm } from "../lib/api";
 
@@ -25,7 +26,7 @@ const initState = { values: initValues };
 const ContactForm = () => {
     const [state, setState] = useState(initState);
     const [touched, setTouched] = useState({});
-    const { values, isLoading } = state;
+    const { values, isLoading, error } = state;
 
     const onBlur = ({target}) => setTouched((prev) => ({...prev,
         [target.name]: true
@@ -44,11 +45,25 @@ const ContactForm = () => {
             ...prev,
             isLoading: true
         }));
-        await sendContactForm(values)
+        try {
+            await sendContactForm(values);
+        } catch (error) {
+            setState((prev) => ({
+                ...prev,
+                isLoading: false,
+                error: error.message,
+            }));
+        }
+        
     }
 
     return (
         <Box pl={4} pr={4}>
+            {error && (
+                <Text color="red.300" my={4} fontSize="xl">
+                    {error}
+                </Text>
+            )}
             <VStack spacing={4} align="flex-start">
                 <FormControl isRequired ininvalid={touched.name && !values.name}>
                     <FormLabel htmlFor="name">Name</FormLabel>
