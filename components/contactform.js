@@ -11,7 +11,8 @@ import {
     VStack,
     Heading,
     Textarea,
-    Text
+    Text,
+    useToast
 } from '@chakra-ui/react'
 import { sendContactForm } from "../lib/api";
 
@@ -24,6 +25,7 @@ const initValues = {
 const initState = { values: initValues };
 
 const ContactForm = () => {
+    const toast = useToast();
     const [state, setState] = useState(initState);
     const [touched, setTouched] = useState({});
     const { values, isLoading, error } = state;
@@ -47,6 +49,14 @@ const ContactForm = () => {
         }));
         try {
             await sendContactForm(values);
+            setTouched({});
+            setState(initState);
+            toast({
+                title: "Message sent.",
+                status: "success",
+                duration: 2000,
+                position: "top"
+            })
         } catch (error) {
             setState((prev) => ({
                 ...prev,
