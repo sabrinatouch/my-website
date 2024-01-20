@@ -32,26 +32,22 @@ const Home = () => {
       <Box>
         <Box height={('calc(100vh - 104px - 116px)')} justifyContent="center" alignItems="center" display="flex">
           <Section delay={0.1}>
-            <Box display={{ md: "flex" }} alignItems="center" justifyContent="center">
-              <Box flexShrink={0} width={{ md: '50%', base: '100%' }}>
-                <Container>
-                <TransitionAnimation>
-                  <AspectRatio maxW="100%">
+            <Box alignItems="center" justifyContent="center">
+              <Box>
+                  <AspectRatio>
                     <Box as='threejsmodel'>
                       <ModelTest />
                     </Box>
                   </AspectRatio>
-                  </TransitionAnimation>
-                </Container>
               </Box>
-              <Box mt={{ base: 4, md: 0 }}  ml={{ md: 6 }}>
+              <Box>
                 <Heading variant="section-title">
                   Hello! I'm Sabrina Touch :)
                 </Heading>
                 <Text> 
-                  What do I do? I translate imagination into design, sculpting captivating visuals as a UI Developer and Graphic Designer, all the while pursuing personal milestones as an athlete.
+                  Colorado based Cambodian-American creative~
                 </Text>
-                <Text pt={8}> 
+                <Text> 
                   If you'd like to connect, you can contact me here.
                 </Text>
               </Box>
