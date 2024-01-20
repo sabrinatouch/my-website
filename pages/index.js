@@ -12,8 +12,21 @@ import ModelTest from '../components/modeltest'
 import Works2 from '../pages/works2'
 import Contact2 from '../pages/contact2'
 import AboutMe from '../pages/aboutme'
+import Lenis from '@studio-freight/lenis'
+import { useEffect } from 'react'
 
 const Home = () => {
+    useEffect(() => {
+      const lenis = new Lenis()
+
+      function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+
+      requestAnimationFrame(raf)
+    })
+
     return (
       <Box>
         <Box height={('calc(100vh - 104px - 116px)')} justifyContent="center" alignItems="center" display="flex">
@@ -53,9 +66,9 @@ const Home = () => {
             </Box>
           </SpringAnimation>
         </Box>
-        <Box mt={32}>
+        {/* <Box mt={32}>
           <AboutMe />
-        </Box>
+        </Box> */}
         <Box mt={32}>
           <Works2 />
         </Box>
