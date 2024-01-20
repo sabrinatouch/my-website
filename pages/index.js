@@ -8,6 +8,7 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import SpringAnimation from '../components/springanimation'
+import TransitionAnimation from '../components/transitionanimation'
 import ModelTest from '../components/modeltest'
 import Works2 from '../pages/works2'
 import Contact2 from '../pages/contact2'
@@ -34,11 +35,13 @@ const Home = () => {
             <Box display={{ md: "flex" }} alignItems="center" justifyContent="center">
               <Box flexShrink={0} width={{ md: '50%', base: '100%' }}>
                 <Container>
+                <TransitionAnimation>
                   <AspectRatio maxW="100%">
                     <Box as='threejsmodel'>
                       <ModelTest />
                     </Box>
                   </AspectRatio>
+                  </TransitionAnimation>
                 </Container>
               </Box>
               <Box mt={{ base: 4, md: 0 }}  ml={{ md: 6 }}>
