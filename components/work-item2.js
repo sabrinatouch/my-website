@@ -1,8 +1,8 @@
 import { 
     Box,
-    Image
+    Image,
+    Text
 } from '@chakra-ui/react'
-import { motion, Variants } from 'framer-motion'
 import TransitionAnimation from './transitionanimation'
 
 const WorkItem2 = ({ id, thumbnail, title, description }) => {
@@ -10,7 +10,9 @@ const WorkItem2 = ({ id, thumbnail, title, description }) => {
         <Box mb={6}>
             <TransitionAnimation>
                 <Box> 
-                    {title}
+                    <Text style={{ fontWeight: '800' }}>
+                        {title}
+                    </Text>
                 </Box>
                 <Box>
                     {description}

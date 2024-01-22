@@ -4,7 +4,8 @@ import {
     Text,
     Heading,
     AspectRatio,
-    Image
+    Image,
+    SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import SpringAnimation from '../components/springanimation'
@@ -32,7 +33,7 @@ const Home = () => {
       <Box>
         <Box height={('calc(100vh - 104px - 116px)')} justifyContent="center" alignItems="center" display="flex">
           <Section delay={0.1}>
-            <Box alignItems="center" justifyContent="center">
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
               <Box>
                 <TransitionAnimation>
                   <AspectRatio>
@@ -42,7 +43,7 @@ const Home = () => {
                   </AspectRatio>
                   </TransitionAnimation>
               </Box>
-              <Box>
+              <Box display="inline-flex" flexDirection="column" justifyContent="center">
                 <Heading variant="section-title">
                   Hello! I'm Sabrina Touch :)
                 </Heading>
@@ -53,7 +54,7 @@ const Home = () => {
                   If you'd like to connect, you can contact me here.
                 </Text>
               </Box>
-            </Box>
+            </SimpleGrid>
           </Section>
         </Box>
         <Box display="flex" justifyContent="center" alignItems="center">
