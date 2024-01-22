@@ -10,15 +10,6 @@ const StyledDiv = chakra(motion.div, {
 })
 
 const TransitionAnimation = ({ children }) => {
-    const time = useTime()
-    const [scope, animate] = useAnimate()
-    const rotate = useTransform(
-        time,
-        [0, 4000], // For every 4 seconds...
-        [0, 360], // ...rotate 360deg
-        { clamp: false }
-    )
-
     return (
         <StyledDiv
             initial={{

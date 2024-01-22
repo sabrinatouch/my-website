@@ -34,11 +34,13 @@ const Home = () => {
           <Section delay={0.1}>
             <Box alignItems="center" justifyContent="center">
               <Box>
+                <TransitionAnimation>
                   <AspectRatio>
                     <Box as='threejsmodel'>
                       <ModelTest />
                     </Box>
                   </AspectRatio>
+                  </TransitionAnimation>
               </Box>
               <Box>
                 <Heading variant="section-title">
