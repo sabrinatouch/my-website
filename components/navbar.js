@@ -25,7 +25,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
     return (
         <Link
-            fontSize='20px'
+            fontSize='21px'
             href={href}
             as={NextLink}
             target={target}
