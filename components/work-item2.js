@@ -11,13 +11,13 @@ const WorkItem2 = ({ id, thumbnail, title, description }) => {
             <TransitionAnimation>
                 <Image src={thumbnail} borderRadius='20px'>
                 </Image>
-                <Box> 
-                    <Text style={{ fontWeight: '800', marginTop: '16px' }}>
+                <Box style={{ marginTop: '18px' }}>
+                    <Text variant='sub-title' style={{ fontWeight: '600' }}>
                         {title}
                     </Text>
-                </Box>
-                <Box>
-                    {description}
+                    <Text style={{ fontSize: '12px' }}>
+                        {description}
+                    </Text>
                 </Box>
             </TransitionAnimation>
         </Box>

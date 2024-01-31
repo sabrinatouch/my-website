@@ -47,11 +47,11 @@ const Home = () => {
                 <Heading variant="section-title" style={{ marginBottom: '0px' }}>
                   Hello!
                 </Heading>
-                <Heading variant="section-title" style={{ marginBottom: '21px' }}>
+                <Heading variant="section-title" style={{ marginBottom: '18px' }}>
                   I'm Sabrina Touch :)
                 </Heading>
-                <Text> 
-                  Colorado based Cambodian-American creative
+                <Text variant='sub-title'> 
+                  Colorado-based Cambodian-American creative
                 </Text>
               </Box>
             </SimpleGrid>
