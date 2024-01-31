@@ -44,14 +44,14 @@ const Home = () => {
                   </TransitionAnimation>
               </Box>
               <Box display="inline-flex" flexDirection="column" justifyContent="center">
-                <Heading variant="section-title">
-                  Hello! I'm Sabrina Touch :)
+                <Heading variant="section-title" style={{ marginBottom: '0px' }}>
+                  Hello!
+                </Heading>
+                <Heading variant="section-title" style={{ marginBottom: '21px' }}>
+                  I'm Sabrina Touch :)
                 </Heading>
                 <Text> 
-                  Colorado based Cambodian-American creative~
-                </Text>
-                <Text> 
-                  If you'd like to connect, you can contact me here.
+                  Colorado based Cambodian-American creative
                 </Text>
               </Box>
             </SimpleGrid>

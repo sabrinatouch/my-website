@@ -15,9 +15,9 @@ const Works2 = () => {
           Works & Projects
         </Heading>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
-          <WorkItem2 id="bobatouch" thumbnail="/thumbnail_bobatouch.png" title="Boba Touch" description="test description" />
-          <WorkItem2 id="temp" thumbnail="/thumbnail_placeholder.png" title="Temp" description="testtest" />
-          <WorkItem2 id="temp" thumbnail="/thumbnail_placeholder.png" title="Temp" description="testtest" />
+          <WorkItem2 id="bobatouch" thumbnail="/tb-bobatouch.png" title="Boba Touch" description="test description" />
+          <WorkItem2 id="khmerconference" thumbnail="/tb-khmerconference.png" title="Cambodian Networking Conference" description="testtest" />
+          <WorkItem2 id="temp" thumbnail="/tb-bobatouch.png" title="Temp" description="testtest" />
           <WorkItem2 id="temp" thumbnail="/thumbnail_placeholder.png" title="Temp" description="testtest" />
         </SimpleGrid>
       </Section>
