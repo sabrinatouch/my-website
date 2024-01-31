@@ -15,7 +15,7 @@ const Logo = () => {
         <LogoBox>
             <Link href="/">
                 <Image 
-                    src="/favicon.ico"
+                    src="/favicon.png"
                     width={40}
                     height={40}
                     style={{borderRadius: '5px'}}

@@ -78,7 +78,7 @@ const Navbar = props => {
                         </Box>
                     </Box>
                     <Box align="right">
-                        <Box align="right" display={{ base: 'inline-block', md: 'none'}}>
+                        <Box align="right" display={{ base: 'inline-block', md: 'none'}} style={{ position: 'fixed', top: '32px', right: '32px', zIndex: '-1' }}>
                             <IconButton
                                 onClick={onToggle}
                                 aria-label="Nav menu"
