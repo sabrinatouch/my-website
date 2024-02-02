@@ -9,11 +9,16 @@ import { motion } from 'framer-motion'
 const variants = {
     open: {
         width: 480,
-        height: 650
+        height: 650,
+        // for these top, right properties to work, make sure to add position: relative in scss
+        top: "-25px",
+        right: "-25px"
     },
     closed: {
         width: 100,
-        height: 40
+        height: 40,
+        top: "0px",
+        right: "0px"
     }
 }
 
