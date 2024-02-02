@@ -1,10 +1,13 @@
 .button{
-    height: 40px;
     width: 100px;
+    height: 40px;
     border-radius: 25px;
     cursor: pointer;
     overflow: hidden; // for the overflow to work to hide the close button, you need to give position relative
-    position: relative;
+    position: absolute; // changed from relative to absolute, so button doesn't get yeeted once we added the menu div
+    // assist with location of button since position was set to absolute
+    top: 0;
+    right: 0;
 
     .slider{
         position: relative;
