@@ -3,11 +3,13 @@
     width: 100px;
     border-radius: 25px;
     cursor: pointer;
-    //overflow: hidden; // for the overflow to work to hide the close button, you need to give position relative
+    overflow: hidden; // for the overflow to work to hide the close button, you need to give position relative
     position: relative;
 
     .slider{
         position: relative;
+        height: 100%;
+        width: 100%;
 
         .el{
             height: 100%;
