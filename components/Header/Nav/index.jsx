@@ -60,14 +60,13 @@ export default function index() {
                         return (
                             <div key={`b_${i}`} className={styles.linkContainer}>
                                 <motion.div 
-                                    href={href}
                                     custom={i}
                                     variants={perspective}
                                     animate="enter"
                                     exit="exit"
                                     initial="initial"
                                 >
-                                    <a>
+                                    <a href={href}>
                                         {title}
                                     </a>
                                 </motion.div>
