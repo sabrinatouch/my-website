@@ -4,7 +4,8 @@
 import React, { useState } from 'react'
 import Button from './Button'
 import styles from './style.module.scss'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import Nav from './Nav';
 
 const variants = {
     open: {
@@ -20,7 +21,7 @@ const variants = {
         height: 40,
         top: "0px",
         right: "0px",
-        transition: {duration: 0.65, ease: [0.76, 0, 0.24, 1]}
+        transition: {duration: 0.65, delay: 0.35, ease: [0.76, 0, 0.24, 1]}
     }
 }
 
@@ -36,7 +37,9 @@ export default function index() {
                 animate={isActive ? "open" : "closed"}
                 initial="closed"
             >
-
+                <AnimatePresence>
+                    {isActive && <Nav />}
+                </AnimatePresence>
             </motion.div>
 
             <Button isActive={isActive} setIsActive={setIsActive} />
