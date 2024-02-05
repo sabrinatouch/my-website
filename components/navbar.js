@@ -47,7 +47,7 @@ const Navbar = props => {
                 as="nav"
                 w="100%"
                 h="104px"
-                maxW="6xl"
+                maxW="10xl"
                 position="relative"
                 p={8}
                 bg={useColorModeValue('#ffffff', '#202023')}

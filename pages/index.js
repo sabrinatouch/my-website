@@ -32,30 +32,31 @@ const Home = () => {
     return (
       <Box>
         <Box height={('calc(100vh - 104px - 116px)')} justifyContent="center" alignItems="center" display="flex">
-          <Section delay={0.1}>
-            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
-              <Box>
+          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
+            <Box style={{ width: '500px', height: 'auto', zIndex: '-1' }}>
+              <Box justifyContent="center" alignItems="center">
                 <TransitionAnimation>
-                  <AspectRatio>
+                  <AspectRatio ratio={1}>
                     <Box as='threejsmodel'>
                       <ModelTest />
                     </Box>
                   </AspectRatio>
-                  </TransitionAnimation>
+                </TransitionAnimation>
               </Box>
-              <Box display="inline-flex" flexDirection="column" justifyContent="center">
-                <Heading variant="section-title" style={{ marginBottom: '0px' }}>
-                  Hello!
+            </Box>
+            <Box display="flex" justifyContent="center" alignItems="center">
+            <Section delay={0.1}>
+              <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
+                <Heading style={{ fontSize: '24px' }}>
+                  Hello! I'm Colorado-based Cambodian-American creative,
                 </Heading>
                 <Heading variant="section-title" style={{ marginBottom: '18px' }}>
-                  I'm Sabrina Touch :)
+                  Sabrina Touch :)
                 </Heading>
-                <Text variant='sub-title'> 
-                  Colorado-based Cambodian-American creative
-                </Text>
               </Box>
-            </SimpleGrid>
-          </Section>
+            </Section>
+            </Box>
+          </SimpleGrid>
         </Box>
         <Box display="flex" justifyContent="center" alignItems="center">
           <SpringAnimation>
