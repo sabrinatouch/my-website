@@ -31,8 +31,8 @@ const Home = () => {
 
     return (
       <Box>
-        <Box as="landing-page">
-          <Box height={('calc(100vh - 104px - 116px)')} justifyContent="center" alignItems="center" display="flex">
+        <Box as="landing-page" display="relative">
+          <Box justifyContent="center" alignItems="center" display="flex">
             <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6}>
               <Box style={{ width: '500px', height: 'auto', zIndex: '-1' }}>
                 <Box justifyContent="center" alignItems="center">
@@ -45,23 +45,38 @@ const Home = () => {
                   </TransitionAnimation>
                 </Box>
               </Box>
-              <Box display="flex" justifyContent="center" alignItems="center">
-              <Section delay={0.1}>
-                <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
-                  <Heading variant="smaller-sub-title" style={{ marginBottom: '26px' }}>
-                    Hello! I'm...
-                  </Heading>
-                  <Heading variant="section-title">
-                    Sabrina Touch
-                  </Heading>
-                  <Heading variant="smaller-sub-title">
-                    UI Developer and Graphic Designer
-                  </Heading>
-                  <Heading variant="smaller-sub-title" style={{ marginTop: '32px' }}>
-                    📍 Colorado
-                  </Heading>
-                </Box>
-              </Section>
+              <Box display={{ base: 'none', lg: 'flex' }} justifyContent="center" alignItems="center">
+                <Section delay={0.1}>
+                  <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
+                    <Heading variant="smaller-sub-title" style={{ marginBottom: '26px' }}>
+                      Hello! I'm...
+                    </Heading>
+                    <Heading variant="section-title">
+                      Sabrina Touch
+                    </Heading>
+                    <Heading variant="smaller-sub-title">
+                      UI Developer and Graphic Designer
+                    </Heading>
+                    <Heading variant="smaller-sub-title" style={{ marginTop: '32px' }}>
+                      📍 Colorado
+                    </Heading>
+                  </Box>
+                </Section>
+              </Box>
+              <Box display={{ base: 'flex', lg: 'none' }} justifyContent="left" alignItems="center">
+                <Section delay={0.1}>
+                  <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
+                    <Heading variant="smaller-sub-title">
+                      Hello! I'm...
+                    </Heading>
+                    <Heading variant="section-title">
+                      Sabrina Touch
+                    </Heading>
+                    <Heading variant="smaller-sub-title">
+                      UI Developer and Graphic Designer
+                    </Heading>
+                  </Box>
+                </Section>
               </Box>
             </SimpleGrid>
           </Box>
