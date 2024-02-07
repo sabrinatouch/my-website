@@ -4,7 +4,7 @@ import { useGLTF, Stage, OrbitControls } from '@react-three/drei'
 
 export default function ModelTest() {
   return (
-    <Canvas shadows camera={{ position: [-10, 3, 10], fov: 14.5}}>
+    <Canvas shadowMap camera={{ position: [-9, 5, 10], fov: 17}}>
         <ambientLight />
         <Stage adjustCamera={false}>
             <Model />

@@ -47,7 +47,7 @@ const Navbar = props => {
                 as="nav"
                 w="100%"
                 h="104px"
-                maxW="6xl"
+                maxW="10xl"
                 position="relative"
                 p={8}
                 bg={useColorModeValue('#ffffff', '#202023')}
@@ -59,7 +59,7 @@ const Navbar = props => {
                     <Logo />
                     <Spacer />
                     <Box align="right">
-                        <Box pl={2} align="right" display={{ base: 'none', md: 'inline-block'}}>
+                        <Box pl={2} align="right" display={{ base: 'none', lg: 'inline-block'}}>
                             <Stack
                                 direction={{ base: 'none', md: 'row' }}
                                 alignItems='center'
@@ -78,7 +78,7 @@ const Navbar = props => {
                         </Box>
                     </Box>
                     <Box align="right">
-                        <Box align="right" display={{ base: 'inline-block', md: 'none'}} style={{ position: 'fixed', top: '32px', right: '32px', zIndex: '-1' }}>
+                        <Box align="right" display={{ base: 'inline-block', lg: 'none'}} style={{ position: 'fixed', top: '32px', right: '32px', zIndex: '-1' }}>
                             <IconButton
                                 onClick={onToggle}
                                 aria-label="Nav menu"
