@@ -32,7 +32,7 @@ const Home = () => {
     return (
       <Box>
         <Box height={('calc(100vh - 104px - 116px)')} justifyContent="center" alignItems="center" display="flex">
-          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
+          <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6}>
             <Box style={{ width: '500px', height: 'auto', zIndex: '-1' }}>
               <Box justifyContent="center" alignItems="center">
                 <TransitionAnimation>
@@ -47,11 +47,17 @@ const Home = () => {
             <Box display="flex" justifyContent="center" alignItems="center">
             <Section delay={0.1}>
               <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
-                <Heading style={{ fontSize: '24px' }}>
-                  Hello! I'm Colorado-based Cambodian-American creative,
+                <Heading variant="smaller-sub-title" style={{ marginBottom: '26px' }}>
+                  Hello! I'm...
                 </Heading>
-                <Heading variant="section-title" style={{ marginBottom: '18px' }}>
-                  Sabrina Touch :)
+                <Heading variant="section-title">
+                  Sabrina Touch
+                </Heading>
+                <Heading variant="smaller-sub-title">
+                  UI Developer and Graphic Designer
+                </Heading>
+                <Heading variant="smaller-sub-title" style={{ marginTop: '32px' }}>
+                  📍 Colorado
                 </Heading>
               </Box>
             </Section>
