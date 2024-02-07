@@ -31,8 +31,7 @@ const Home = () => {
 
     return (
       <Box>
-        <Box as="landing-page" display="relative">
-          <Box justifyContent="center" alignItems="center" display="flex">
+          <Box height={('calc(100vh - 220px)')} justifyContent="space-around" alignItems="center" display="flex" flexDirection="column">
             <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6}>
               <Box style={{ width: '500px', height: 'auto', zIndex: '-1' }}>
                 <Box justifyContent="center" alignItems="center">
@@ -66,31 +65,33 @@ const Home = () => {
               <Box display={{ base: 'flex', lg: 'none' }} justifyContent="left" alignItems="center">
                 <Section delay={0.1}>
                   <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
-                    <Heading variant="smaller-sub-title">
+                    <Heading variant="smallest-sub-title">
                       Hello! I'm...
                     </Heading>
-                    <Heading variant="section-title">
+                    <Heading variant="sub-title">
                       Sabrina Touch
                     </Heading>
-                    <Heading variant="smaller-sub-title">
+                    <Heading variant="smallest-sub-title">
                       UI Developer and Graphic Designer
+                    </Heading>
+                    <Heading variant="smallest-sub-title">
+                      📍 Colorado
                     </Heading>
                   </Box>
                 </Section>
               </Box>
             </SimpleGrid>
-          </Box>
-          <Box display="flex" justifyContent="center" alignItems="center">
-            <SpringAnimation>
-              <Box width={42} height={42} justifyContent="center" display="flex" alignItems="center">
-                <Image 
-                  src="/down-chevron.svg"
-                  width={18}
-                  height={18}
-                />
-              </Box>
-            </SpringAnimation>
-          </Box>
+            <Box display={{ base: 'none', lg: 'flex' }} justifyContent="center" alignItems="center">
+              <SpringAnimation>
+                <Box width={42} height={42} justifyContent="center" display="flex" alignItems="center">
+                  <Image 
+                    src="/down-chevron.svg"
+                    width={18}
+                    height={18}
+                  />
+                </Box>
+              </SpringAnimation>
+            </Box>
         </Box>
         {/* <Box mt={32}>
           <AboutMe />

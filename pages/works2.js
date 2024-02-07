@@ -12,7 +12,7 @@ const Works2 = () => {
     return (
       <Section delay={0.2}>
         <Heading variant="section-title">
-          Works & Projects
+          Works
         </Heading>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
           <WorkItem2 id="bobatouch" thumbnail="/tb-bobatouch.png" title="Boba Touch" description="Website / JavaScript / Figma " />
