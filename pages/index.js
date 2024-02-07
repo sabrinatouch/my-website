@@ -31,49 +31,51 @@ const Home = () => {
 
     return (
       <Box>
-        <Box height={('calc(100vh - 104px - 116px)')} justifyContent="center" alignItems="center" display="flex">
-          <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6}>
-            <Box style={{ width: '500px', height: 'auto', zIndex: '-1' }}>
-              <Box justifyContent="center" alignItems="center">
-                <TransitionAnimation>
-                  <AspectRatio ratio={1}>
-                    <Box as='threejsmodel'>
-                      <ModelTest />
-                    </Box>
-                  </AspectRatio>
-                </TransitionAnimation>
+        <Box as="landing-page">
+          <Box height={('calc(100vh - 104px - 116px)')} justifyContent="center" alignItems="center" display="flex">
+            <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6}>
+              <Box style={{ width: '500px', height: 'auto', zIndex: '-1' }}>
+                <Box justifyContent="center" alignItems="center">
+                  <TransitionAnimation>
+                    <AspectRatio ratio={1}>
+                      <Box>
+                        <ModelTest />
+                      </Box>
+                    </AspectRatio>
+                  </TransitionAnimation>
+                </Box>
               </Box>
-            </Box>
-            <Box display="flex" justifyContent="center" alignItems="center">
-            <Section delay={0.1}>
-              <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
-                <Heading variant="smaller-sub-title" style={{ marginBottom: '26px' }}>
-                  Hello! I'm...
-                </Heading>
-                <Heading variant="section-title">
-                  Sabrina Touch
-                </Heading>
-                <Heading variant="smaller-sub-title">
-                  UI Developer and Graphic Designer
-                </Heading>
-                <Heading variant="smaller-sub-title" style={{ marginTop: '32px' }}>
-                  📍 Colorado
-                </Heading>
+              <Box display="flex" justifyContent="center" alignItems="center">
+              <Section delay={0.1}>
+                <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
+                  <Heading variant="smaller-sub-title" style={{ marginBottom: '26px' }}>
+                    Hello! I'm...
+                  </Heading>
+                  <Heading variant="section-title">
+                    Sabrina Touch
+                  </Heading>
+                  <Heading variant="smaller-sub-title">
+                    UI Developer and Graphic Designer
+                  </Heading>
+                  <Heading variant="smaller-sub-title" style={{ marginTop: '32px' }}>
+                    📍 Colorado
+                  </Heading>
+                </Box>
+              </Section>
               </Box>
-            </Section>
-            </Box>
-          </SimpleGrid>
-        </Box>
-        <Box display="flex" justifyContent="center" alignItems="center">
-          <SpringAnimation>
-            <Box width={42} height={42} justifyContent="center" display="flex" alignItems="center">
-              <Image 
-                src="/down-chevron.svg"
-                width={18}
-                height={18}
-              />
-            </Box>
-          </SpringAnimation>
+            </SimpleGrid>
+          </Box>
+          <Box display="flex" justifyContent="center" alignItems="center">
+            <SpringAnimation>
+              <Box width={42} height={42} justifyContent="center" display="flex" alignItems="center">
+                <Image 
+                  src="/down-chevron.svg"
+                  width={18}
+                  height={18}
+                />
+              </Box>
+            </SpringAnimation>
+          </Box>
         </Box>
         {/* <Box mt={32}>
           <AboutMe />
