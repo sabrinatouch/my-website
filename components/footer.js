@@ -47,14 +47,14 @@ const Footer = props => {
                         path={path}
                         target="_blank"
                     >
-                        <IoLogoGithub font-size='20px' />
+                        <IoLogoGithub fontSize='20px' />
                     </LinkItem>
                     <LinkItem
                         href="https://linkedin.com/in/sabrinatouch"
                         path={path}
                         target="_blank"
                     >
-                        <IoLogoLinkedin font-size='20px'/>
+                        <IoLogoLinkedin fontSize='20px'/>
                     </LinkItem>
                     <LinkItem
                         href=""
