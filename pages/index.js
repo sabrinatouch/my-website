@@ -44,10 +44,10 @@ const Home = () => {
                   </TransitionAnimation>
                 </Box>
               </Box>
-              <Box display={{ base: 'none', lg: 'flex' }} justifyContent="center" alignItems="center">
+              <Box display={{ base: 'flex' }} justifyContent="center" alignItems="center">
                 <Section delay={0.1}>
                   <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
-                    <Heading variant="smaller-sub-title" style={{ marginBottom: '26px' }}>
+                    <Heading variant="smaller-sub-title">
                       Hello! I'm...
                     </Heading>
                     <Heading variant="section-title">
@@ -55,27 +55,6 @@ const Home = () => {
                     </Heading>
                     <Heading variant="smaller-sub-title">
                       UI Developer and Graphic Designer
-                    </Heading>
-                    <Heading variant="smaller-sub-title" style={{ marginTop: '32px' }}>
-                      📍 Colorado
-                    </Heading>
-                  </Box>
-                </Section>
-              </Box>
-              <Box display={{ base: 'flex', lg: 'none' }} justifyContent="left" alignItems="center">
-                <Section delay={0.1}>
-                  <Box flexDirection="column" style={{ zIndex: '1'}} maxW={'555px'}>
-                    <Heading variant="smallest-sub-title">
-                      Hello! I'm...
-                    </Heading>
-                    <Heading variant="sub-title">
-                      Sabrina Touch
-                    </Heading>
-                    <Heading variant="smallest-sub-title">
-                      UI Developer and Graphic Designer
-                    </Heading>
-                    <Heading variant="smallest-sub-title">
-                      📍 Colorado
                     </Heading>
                   </Box>
                 </Section>
@@ -93,9 +72,9 @@ const Home = () => {
               </SpringAnimation>
             </Box>
         </Box>
-        {/* <Box mt={32}>
+        <Box mt={32}>
           <AboutMe />
-        </Box> */}
+        </Box>
         <Box mt={32}>
           <Works2 />
         </Box>
