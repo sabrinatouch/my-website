@@ -31,7 +31,7 @@ const Home = () => {
 
     return (
       <Box>
-          <Box height={('calc(100vh - 220px)')} justifyContent="space-around" alignItems="center" display="flex" flexDirection="column">
+          <Box height={('calc(100vh - 220px)')} justifyContent="space-evenly" alignItems="center" display="flex" flexDirection="column">
             <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6}>
               <Box style={{ width: '500px', height: 'auto', zIndex: '-1' }}>
                 <Box justifyContent="center" alignItems="center">
@@ -60,7 +60,7 @@ const Home = () => {
                 </Section>
               </Box>
             </SimpleGrid>
-            <Box display={{ base: 'none', lg: 'flex' }} justifyContent="center" alignItems="center">
+            <Box display={{ base: 'flex' }} justifyContent="center" alignItems="center">
               <SpringAnimation>
                 <Box width={42} height={42} justifyContent="center" display="flex" alignItems="center">
                   <Image 
