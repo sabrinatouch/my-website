@@ -10,7 +10,7 @@ import Nav from './Nav';
 const variants = {
     open: {
         width: 480,
-        height: 650,
+        height: "calc(100vh - 48px)",
         // for these top, right properties to work, make sure to add position: relative in scss
         top: "-25px",
         right: "-25px",

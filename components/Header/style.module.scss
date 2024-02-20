@@ -7,7 +7,7 @@
     .menu{
         position: relative;
         width: 480px;
-        height: 650px;
+        height: calc(100vh - 48px);
         background-color: #c9fd74;
         border-radius: 25px;
     }
