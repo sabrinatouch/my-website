@@ -43,7 +43,7 @@ const Contact2 = props => {
                     with the Touch
                 </Heading>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <SimpleGrid columns={{ base: 1 }} spacing={8}>
+                    <SimpleGrid columns={{ base: 1 }} spacing={10}>
                         <Box display={{ base: 'flex', lg: 'flex' }} alignItems="center" justifyContent="center" flexDirection="column">
                             <Box 
                                 display="flex"
@@ -85,7 +85,7 @@ const Contact2 = props => {
                             </Box>
                         </Box>
                         <Box w='md'>
-                            <TransitionAnimationRight>                     
+                            <TransitionAnimationRight>        
                                 <ContactForm/>
                             </TransitionAnimationRight> 
                         </Box>

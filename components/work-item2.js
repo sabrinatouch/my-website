@@ -12,7 +12,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
     return (
         <Link
-            fontSize='20px'
             href={href}
             as={NextLink}
             target={target}
@@ -28,23 +27,23 @@ const WorkItem2 = ({id, href, thumbnail, title, description}) => {
 
     return (
         <Box>
-            <TransitionAnimation>
-                <LinkItem
-                    href={href}
-                    target="_blank"
-                >
-                    <Image src={thumbnail} borderRadius='15px'>
-                    </Image>
-                    <Box style={{ marginTop: '18px' }}>
-                        <Text variant='sub-title' style={{ fontWeight: '600' }}>
+            <LinkItem
+                href={href}
+                target="_blank"
+            >
+                <Image src={thumbnail} borderRadius='15px'>
+                </Image>
+                <TransitionAnimation>
+                    <Box mt={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <Text variant="sub-title" style={{ lineHeight: '1.1' }}>
                             {title}
                         </Text>
-                        <Text style={{ fontSize: '14px', fontWeight: '400' }}>
+                        <Text style={{ fontSize: '14px', fontWeight: '400', textTransform: 'uppercase', borderWidth: '2px', borderRadius: '25px', padding: '4px 8px', textAlign: 'center'}}>
                             {description}
                         </Text>
                     </Box>
-                </LinkItem>
-            </TransitionAnimation>
+                </TransitionAnimation>
+            </LinkItem>
         </Box>
     )
 }
