@@ -1,29 +1,95 @@
 import {
     Box,
     Heading,
-    Text
+    Text,
+    SimpleGrid,
+    HStack,
+    Link
 } from '@chakra-ui/react'
 import ContactForm from '../components/contactform'
+import TransitionAnimationRight from '../components/transitionanimationright'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoYoutube, IoLogoInstagram } from 'react-icons/io5'
+import NextLink from 'next/link'
 
-const Contact2 = () => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
+    const active = path === href
+
+    return (
+        <Link
+            fontSize='20px'
+            href={href}
+            as={NextLink}
+            target={target}
+            {...props}
+            textDecoration={active ? 'underline' : 'none'}
+        >
+            {children}
+        </Link>
+    )
+}
+
+const Contact2 = props => {
+    const { path } = props
     return (
         <Box>
-            <Heading display={{ base: 'none', lg: 'flex' }} variant="section-title" mb={0} justifyContent="center">
-                Get in touch with the Touch
-            </Heading>
-            <Heading variant="sub-title" display={{ base: 'flex', lg: 'none' }} justifyContent="center">
-                Get in touch with the Touch
-            </Heading>
-            <Box mt={4} display={{ md: 'flex' }}>
-                <Box w={{ md: '50%', base: '100%' }}>
-                    <Box h={500} bgColor={'gray.100'} borderRadius='10px'>
-                        <Text>
-                            Download Resume
-                        </Text>
-                    </Box>
-                </Box>
-                <Box w={{ md: '50%', base: '100%' }} mt={{ md: 0, base: 6 }} ml={{ md: 6 }}>
-                    <ContactForm />
+            <Box>
+                <Heading mb={6} display={{ base: 'none', lg: 'flex' }} variant="section-title" justifyContent="center">
+                    Get in touch with the Touch
+                </Heading>
+                <Heading style={{ marginBottom: '-12px' }} variant="sub-title" display={{ base: 'flex', lg: 'none' }} justifyContent="center">
+                    Get in touch
+                </Heading>
+                <Heading mb={6} variant="sub-title" display={{ base: 'flex', lg: 'none' }} justifyContent="center">
+                    with the Touch
+                </Heading>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                    <SimpleGrid columns={{ base: 1 }} spacing={8}>
+                        <Box display={{ base: 'flex', lg: 'flex' }} alignItems="center" justifyContent="center" flexDirection="column">
+                            <Box 
+                                display="flex"
+                                align="center"
+                                alignItems="center"
+                                justifyContent="center"
+                            >
+                                {/* &copy; {new Date().getFullYear()} Sabrina Touch. All Rights Reserved.  */}
+                                <HStack>
+                                    <LinkItem
+                                        href="https://github.com/sabrinatouch"
+                                        path={path}
+                                        target="_blank"
+                                    >
+                                        <IoLogoGithub fontSize='20px' />
+                                    </LinkItem>
+                                    <LinkItem
+                                        href="https://linkedin.com/in/sabrinatouch"
+                                        path={path}
+                                        target="_blank"
+                                    >
+                                        <IoLogoLinkedin fontSize='20px'/>
+                                    </LinkItem>
+                                    <LinkItem
+                                        href="https://www.instagram.com/sabrinatouch_/"
+                                        path={path}
+                                        target="_blank"    
+                                    >
+                                        <IoLogoInstagram fontSize='20px'/>
+                                    </LinkItem>
+                                    <LinkItem
+                                        href="https://www.youtube.com/@sabrinatouch_"
+                                        path={path}
+                                        target="_blank"    
+                                    >
+                                        <IoLogoYoutube fontSize='20px'/>
+                                    </LinkItem>
+                                </HStack>
+                            </Box>
+                        </Box>
+                        <Box w='md'>
+                            <TransitionAnimationRight>                     
+                                <ContactForm/>
+                            </TransitionAnimationRight> 
+                        </Box>
+                    </SimpleGrid>
                 </Box>
             </Box>
         </Box>

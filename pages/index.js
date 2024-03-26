@@ -54,7 +54,7 @@ const Home = () => {
                       Sabrina Touch
                     </Heading>
                     <Heading variant="smaller-sub-title">
-                      UI Developer and Graphic Designer
+                      UI Engineer and Graphic Designer
                     </Heading>
                   </Box>
                 </Section>

@@ -20,8 +20,6 @@ const Works2 = () => {
         <SimpleGrid mt={4} columns={{ base: 1, md: 2 }} spacing={8}>
           <WorkItem2 id="bobatouch" thumbnail="/tb-bobatouch.png" title="Boba Touch" description="Website / JavaScript / Figma " />
           <WorkItem2 id="khmerconference" thumbnail="/tb-khmerconference.png" title="Cambodian Networking Conference" description="Adobe Illustrator / Graphic Design / Logo" />
-          <WorkItem2 id="temp" thumbnail="/tb-khmerconference.png" title="3D Desk Model" description="Blender / Graphic Design " />
-          <WorkItem2 id="temp" thumbnail="/tb-bobatouch.png" title="Personal Website" description="Website / NextJS / ChakraUI / Framer" />
         </SimpleGrid>
       </Section>
     )

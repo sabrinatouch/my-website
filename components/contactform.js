@@ -120,7 +120,7 @@ const ContactForm = () => {
                 </FormControl>
                 <Button 
                     type="submit" 
-                    colorScheme="purple" 
+                    colorScheme="green" 
                     width="full"
                     isLoading={isLoading}
                     disabled={!values.name || !values.email || !values.message}
