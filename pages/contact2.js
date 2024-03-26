@@ -33,13 +33,13 @@ const Contact2 = props => {
     return (
         <Box>
             <Box>
-                <Heading mb={6} display={{ base: 'none', lg: 'flex' }} variant="section-title" justifyContent="center">
+                <Heading mb={8} display={{ base: 'none', lg: 'flex' }} variant="section-title" justifyContent="center">
                     Get in touch with the Touch
                 </Heading>
                 <Heading style={{ marginBottom: '-12px' }} variant="sub-title" display={{ base: 'flex', lg: 'none' }} justifyContent="center">
                     Get in touch
                 </Heading>
-                <Heading mb={6} variant="sub-title" display={{ base: 'flex', lg: 'none' }} justifyContent="center">
+                <Heading mb={8} variant="sub-title" display={{ base: 'flex', lg: 'none' }} justifyContent="center">
                     with the Touch
                 </Heading>
                 <Box display="flex" alignItems="center" justifyContent="center">
@@ -58,28 +58,28 @@ const Contact2 = props => {
                                         path={path}
                                         target="_blank"
                                     >
-                                        <IoLogoGithub fontSize='20px' />
+                                        <IoLogoGithub fontSize='24px' />
                                     </LinkItem>
                                     <LinkItem
                                         href="https://linkedin.com/in/sabrinatouch"
                                         path={path}
                                         target="_blank"
                                     >
-                                        <IoLogoLinkedin fontSize='20px'/>
+                                        <IoLogoLinkedin fontSize='24px'/>
                                     </LinkItem>
                                     <LinkItem
                                         href="https://www.instagram.com/sabrinatouch_/"
                                         path={path}
                                         target="_blank"    
                                     >
-                                        <IoLogoInstagram fontSize='20px'/>
+                                        <IoLogoInstagram fontSize='24px'/>
                                     </LinkItem>
                                     <LinkItem
                                         href="https://www.youtube.com/@sabrinatouch_"
                                         path={path}
                                         target="_blank"    
                                     >
-                                        <IoLogoYoutube fontSize='20px'/>
+                                        <IoLogoYoutube fontSize='24px'/>
                                     </LinkItem>
                                 </HStack>
                             </Box>
