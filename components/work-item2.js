@@ -38,7 +38,7 @@ const WorkItem2 = ({id, href, thumbnail, title, description}) => {
                         <Text variant="sub-title" style={{ lineHeight: '1.1' }}>
                             {title}
                         </Text>
-                        <Text style={{ fontSize: '14px', fontWeight: '400', textTransform: 'uppercase', borderWidth: '2px', borderRadius: '25px', padding: '4px 8px', textAlign: 'center'}}>
+                        <Text style={{ fontSize: '14px', fontWeight: '400', textTransform: 'uppercase', borderWidth: '2px', borderRadius: '25px', padding: '6px 10px', textAlign: 'center', lineHeight: '0.9'}}>
                             {description}
                         </Text>
                     </Box>

@@ -13,12 +13,12 @@ const AboutMe = () => {
     return (
         <Box>
             <Box mt={4}>
-                <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={14}>
-                    <Box display={{ base: 'relative', lg: 'flex' }} alignItems="flex-start" justifyContent="center" flexDirection="column">
-                        <Heading variant="section-title" display={{ base: 'none', lg: 'flex' }}>
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={14}>
+                    <Box display={{ base: 'relative', md: 'flex' }} alignItems="flex-start" justifyContent="center" flexDirection="column">
+                        <Heading variant="section-title" display={{ base: 'none', md: 'flex' }}>
                             About Me
                         </Heading>
-                        <Heading variant="sub-title" display={{ base: 'flex', lg: 'none' }}>
+                        <Heading variant="sub-title" display={{ base: 'flex', md: 'none' }}>
                             About Me
                         </Heading>
                         <Text mt={8} variant="sub-title">
