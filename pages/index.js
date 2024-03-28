@@ -31,7 +31,7 @@ const Home = () => {
 
     return (
       <Box>
-        <Box height={('calc(100vh - 220px)')}>
+        <Box height={('calc(100vh - 200px)')}>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '2', md: '14' }} height='100%'>
             <AspectRatio ratio={1}>
               <Box>
