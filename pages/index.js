@@ -39,7 +39,8 @@ const Home = () => {
               </Box>
             </AspectRatio>
             <Box display="flex" alignItems="center" justifyContent="center" width="100%">  
-              <Section delay={0.1}>
+            <TransitionAnimation>
+              <Section delay={0.2}>
                 <Heading variant="smaller-sub-title" textAlign="center">
                   Hello, I'm
                 </Heading>
@@ -52,20 +53,9 @@ const Home = () => {
                   </Heading>
                 </Box>
               </Section>
+              </TransitionAnimation>
             </Box>
           </SimpleGrid>
-
-          {/* <Box display={{ base: 'flex' }} justifyContent="center" alignItems="center">
-            <SpringAnimation>
-              <Box width={42} height={42} justifyContent="center" display="flex" alignItems="center">
-                <Image 
-                  src="/down-chevron.svg"
-                  width={18}
-                  height={18}
-                />
-              </Box>
-            </SpringAnimation>
-          </Box> */}
         </Box>
         <Box mt={32}>
           <AboutMe />
