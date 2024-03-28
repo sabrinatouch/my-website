@@ -10,6 +10,7 @@ import {
 import Section from '../components/section'
 import SpringAnimation from '../components/springanimation'
 import TransitionAnimationRight from '../components/transitionanimationright'
+import TransitionAnimationBottom from '../components/transitionanimationbottom'
 import ModelTest from '../components/modeltest'
 import Works2 from '../pages/works2'
 import Contact2 from '../pages/contact2'
@@ -39,21 +40,21 @@ const Home = () => {
               </Box>
             </AspectRatio>
             <Box display="flex" alignItems="center" justifyContent="center" width="100%">  
-            <TransitionAnimationRight>
               <Section delay={0.2}>
-                <Heading variant="smaller-sub-title" textAlign="center">
-                  Hello, I'm
-                </Heading>
-                <Heading variant="section-title" style={{ lineHeight: '0.9' }} textAlign="center">
-                  Sabrina Touch
-                </Heading>
-                <Box display="flex" alignItems="center" justifyContent="center" mt={6}>
-                  <Heading style={{ fontSize: '14px', fontWeight: '400', textTransform: 'uppercase', borderWidth: '2px', borderRadius: '25px', padding: '6px 10px', textAlign: 'center', lineHeight: '0.9', maxWidth: 'fit-content' }}>
-                    UI Engineer and Graphic Designer
+                <TransitionAnimationRight>
+                  <Heading variant="smaller-sub-title" textAlign="center">
+                    Hello, I'm
                   </Heading>
-                </Box>
+                  <Heading variant="section-title" style={{ lineHeight: '0.9' }} textAlign="center">
+                    Sabrina Touch
+                  </Heading>
+                  <Box display="flex" alignItems="center" justifyContent="center" mt={6}>
+                    <Heading style={{ fontSize: '14px', fontWeight: '400', textTransform: 'uppercase', borderWidth: '2px', borderRadius: '25px', padding: '6px 10px', textAlign: 'center', lineHeight: '0.9', maxWidth: 'fit-content' }}>
+                      UI Engineer and Graphic Designer
+                    </Heading>
+                  </Box>
+                </TransitionAnimationRight>
               </Section>
-              </TransitionAnimationRight>
             </Box>
           </SimpleGrid>
         </Box>
