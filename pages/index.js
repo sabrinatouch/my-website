@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import SpringAnimation from '../components/springanimation'
-import TransitionAnimation from '../components/transitionanimation'
+import TransitionAnimationRight from '../components/transitionanimationright'
 import ModelTest from '../components/modeltest'
 import Works2 from '../pages/works2'
 import Contact2 from '../pages/contact2'
@@ -39,7 +39,7 @@ const Home = () => {
               </Box>
             </AspectRatio>
             <Box display="flex" alignItems="center" justifyContent="center" width="100%">  
-            <TransitionAnimation>
+            <TransitionAnimationRight>
               <Section delay={0.2}>
                 <Heading variant="smaller-sub-title" textAlign="center">
                   Hello, I'm
@@ -53,7 +53,7 @@ const Home = () => {
                   </Heading>
                 </Box>
               </Section>
-              </TransitionAnimation>
+              </TransitionAnimationRight>
             </Box>
           </SimpleGrid>
         </Box>

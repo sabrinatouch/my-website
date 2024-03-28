@@ -33,13 +33,13 @@ const Contact2 = props => {
     return (
         <Box>
             <Box>
-                <Heading mb={8} display={{ base: 'none', lg: 'flex' }} variant="section-title" justifyContent="center">
+                <Heading mb={8} display={{ base: 'none', md: 'flex' }} variant="section-title" justifyContent="center" textAlign="center" lineHeight="0.9">
                     Get in touch with the Touch
                 </Heading>
-                <Heading style={{ marginBottom: '-12px' }} variant="sub-title" display={{ base: 'flex', lg: 'none' }} justifyContent="center">
+                <Heading style={{ marginBottom: '-12px' }} variant="sub-title" display={{ base: 'flex', md: 'none' }} justifyContent="center">
                     Get in touch
                 </Heading>
-                <Heading mb={8} variant="sub-title" display={{ base: 'flex', lg: 'none' }} justifyContent="center">
+                <Heading mb={8} variant="sub-title" display={{ base: 'flex', md: 'none' }} justifyContent="center">
                     with the Touch
                 </Heading>
                 <Box display="flex" alignItems="center" justifyContent="center">

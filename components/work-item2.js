@@ -27,13 +27,13 @@ const WorkItem2 = ({id, href, thumbnail, title, description}) => {
 
     return (
         <Box>
+            <TransitionAnimation>
             <LinkItem
                 href={href}
                 target="_blank"
             >
                 <Image src={thumbnail} borderRadius='15px'>
                 </Image>
-                <TransitionAnimation>
                     <Box mt={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                         <Text variant="sub-title" style={{ lineHeight: '1.1' }}>
                             {title}
@@ -42,8 +42,8 @@ const WorkItem2 = ({id, href, thumbnail, title, description}) => {
                             {description}
                         </Text>
                     </Box>
-                </TransitionAnimation>
             </LinkItem>
+            </TransitionAnimation>
         </Box>
     )
 }
