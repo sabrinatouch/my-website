@@ -1,4 +1,4 @@
-import { motion, useTime, useTransform, useAnimate } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { chakra, shouldForwardProp } from '@chakra-ui/react'
 
 const StyledDiv = chakra(motion.div, {
@@ -8,24 +8,18 @@ const StyledDiv = chakra(motion.div, {
 })
 
 const SpringAnimation = ({ children }) => {
-    const time = useTime()
-    const [scope, animate] = useAnimate()
-    const rotate = useTransform(
-        time,
-        [0, 4000], // For every 4 seconds...
-        [0, 360], // ...rotate 360deg
-        { clamp: false }
-    )
-
     return (
         <StyledDiv
-            animate={{ y: 15 }}
-            transition={{
-                delay: 0,
-                duration: 1.5,
-                ease: [.35, .17, .3, 1],
-                repeat: Infinity,
-                repeatType: "mirror",
+            initial={{
+                y: 50,
+                opacity: 0
+            }}
+            animate={{ 
+                y: 0,
+                opacity: 1
+            }}
+            transition={{ 
+                duration: 0.5,
             }}
         >
             {children}

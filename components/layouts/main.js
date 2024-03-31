@@ -15,7 +15,6 @@ const Main = ({ children, router }) => {
             <TransitionAnimationTop>
                 <Header />
             </TransitionAnimationTop>
-            {/* <Navbar path={router.asPath} /> */}
             <Container maxW='8xl' pl={14} pr={14} mt={24}>
                 {children}
             </Container>
