@@ -1,10 +1,7 @@
 import {
     Box,
-    Container,
-    Text,
     Heading,
     AspectRatio,
-    Image,
     SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
