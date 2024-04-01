@@ -23,14 +23,14 @@ export const preLoaderAnim = () => {
     .from(".texts-container span", {
       duration: 1.5,
       delay: 1,
-      y: 70,
+      y: 90,
       skewY: 10,
       stagger: 0.4,
       ease: "elastic.out(1, 0.3)",
     })
     .to(".texts-container span", {
       duration: 1,
-      y: 70,
+      y: 90,
       skewY: -20,
       stagger: 0.2,
       ease: "Power3.easeOut",
