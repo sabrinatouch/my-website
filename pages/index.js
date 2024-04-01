@@ -8,15 +8,14 @@ import {
     SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
-import SpringAnimation from '../components/springanimation'
 import TransitionAnimationRight from '../components/transitionanimationright'
-import TransitionAnimationBottom from '../components/transitionanimationbottom'
 import ModelTest from '../components/modeltest'
 import Works2 from '../pages/works2'
 import Contact2 from '../pages/contact2'
 import AboutMe from '../pages/aboutme'
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
+import Preloader from '../components/Preloader'
 
 const Home = () => {
     useEffect(() => {
@@ -31,15 +30,8 @@ const Home = () => {
     })
 
     return (
-      <Box>
-        {/* <Box bgColor="#161516" width="100%" height="100vh" display="flex" alignItems="center" justifyContent="center" flexDirection="column">
-          <SpringAnimation>
-            <Image src="/favicon.png" width="108px" height="108px" borderRadius="64px" />
-            <Text color="white" mt={8} style={{ fontSize: '26px', fontWeight: '500' }}>
-              loading...
-            </Text>
-          </SpringAnimation>
-        </Box> */}
+      <Box width='100%' height='100%' overflow='hidden'>
+        <Preloader />
         <Box height={('calc(100vh - 200px)')}>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '2', md: '14' }} height='100%'>
             <AspectRatio ratio={1}>
