@@ -31,7 +31,7 @@ const AboutMe = () => {
                             </Text>
                         </TransitionAnimation>
                     </Box>
-                    <Box>
+                    <Box display="flex" alignItems="center" justifyContent="center">
                         <TransitionAnimationRight>
                             <Image src={'./selfie.png'} borderRadius='15px' />
                             <Text mt={4}>
