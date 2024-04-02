@@ -55,6 +55,16 @@ export default function index() {
     return (
         <div className={styles.nav}>
             <div className={styles.body}>
+                <Link 
+                    activeClass="active"
+                    to="home"
+                    smooth={true}
+                    spy={true}
+                    offset={-50}
+                    style={{ cursor: 'pointer', fontSize: '18px' }}
+                >
+                    back to top
+                </Link>
                 {
                     Links.map( (link, i) => {
                         const { title, href } = link;
@@ -75,6 +85,7 @@ export default function index() {
                                         to={href} 
                                         smooth={true}
                                         spy={true}
+                                        offset={-50}
                                         style={{ cursor: 'pointer' }}
                                     >
                                         {title}
