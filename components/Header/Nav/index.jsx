@@ -4,6 +4,7 @@ import React from 'react'
 import { Links, FooterLinks } from './data'
 import styles from './style.module.scss'
 import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 
 const perspective = {
     initial: {
@@ -66,9 +67,18 @@ export default function index() {
                                     exit="exit"
                                     initial="initial"
                                 >
-                                    <a href={href}>
+                                    {/* <a href={href}>
                                         {title}
-                                    </a>
+                                    </a> */}
+                                    <Link 
+                                        activeClass="active"
+                                        to={href} 
+                                        smooth={true}
+                                        spy={true}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        {title}
+                                    </Link>
                                 </motion.div>
                             </div>
                         )

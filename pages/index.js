@@ -13,6 +13,7 @@ import AboutMe from '../pages/aboutme'
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import Preloader from '../components/Preloader'
+import { Element } from 'react-scroll'
 
 const Home = () => {
     useEffect(() => {
@@ -56,13 +57,19 @@ const Home = () => {
           </SimpleGrid>
         </Box>
         <Box mt={32}>
-          <AboutMe />
+          <Element name="aboutme">
+            <AboutMe />
+          </Element>
         </Box>
         <Box mt={32}>
-          <Works2 />
+          <Element name="works">
+            <Works2 />
+          </Element>
         </Box>
         <Box mt={32}>
-          <Contact2 />
+          <Element name="contact">
+            <Contact2 />
+          </Element>
         </Box>
       </Box>
     )
