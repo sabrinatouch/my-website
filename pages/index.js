@@ -30,8 +30,8 @@ const Home = () => {
     return (
       <Box width='100%' height='100%' overflow='hidden'>
         <Preloader />
+        <Element name="home">
         <Box height={('calc(100vh - 200px)')}>
-          <Element name="home">
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '2', md: '14' }} height='100%'>
               <AspectRatio ratio={1}>
                 <Box>
@@ -56,8 +56,8 @@ const Home = () => {
                 </Section>
               </Box>
             </SimpleGrid>
-          </Element>
         </Box>
+        </Element>
         <Box mt={32}>
           <Element name="aboutme">
             <AboutMe />
