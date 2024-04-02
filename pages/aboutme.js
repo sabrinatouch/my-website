@@ -24,7 +24,7 @@ const AboutMe = () => {
                         </Heading>
                         <TransitionAnimation>
                             <Text mt={8} variant="sub-title">
-                                I'm a Cambodian-American creative technologist based in Denver, Colorado. My expertise lies in engineering user interfaces, graphic design, and UX design, where I blend technical skills with my keen eye for aesthetics. 
+                                I'm a Cambodian-American creative technologist based in Denver, Colorado. My expertise lies in engineering user interfaces, graphic design, and UX design, bringing together technical elements while maintaining the visual appeal.
                             </Text>
                             <Text mt={4} variant="sub-title">
                                 Outside of work I enjoy playing volleyball, karaoke, trying new matcha powders, and playing PC games. 
