@@ -16,18 +16,18 @@ export const Links = [
 export const FooterLinks = [
     {
         title: "GitHub",
-        href: "/"
+        href: "https://github.com/sabrinatouch"
     },
     {
         title: "LinkedIn",
-        href: "/"
+        href: "https://linkedin.com/in/sabrinatouch"
     },
     {
         title: "Instagram",
-        href: "/"
+        href: "https://www.instagram.com/sabrinatouch_/"
     },
     {
         title: "YouTube",
-        href: "/"
+        href: "https://www.youtube.com/@sabrinatouch_"
     },
 ]
