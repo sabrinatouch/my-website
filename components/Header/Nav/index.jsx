@@ -60,7 +60,6 @@ export default function index() {
                     to="home"
                     smooth={true}
                     spy={true}
-                    offset={-50}
                     style={{ cursor: 'pointer', fontSize: '18px' }}
                 >
                     back to top
