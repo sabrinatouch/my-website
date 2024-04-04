@@ -17,7 +17,7 @@ const Works2 = () => {
         <Heading variant="sub-title" display={{ base: 'flex', md: 'none' }}>
           Works
         </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={14}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
           <WorkItem2 id="bobatouch" href="https://bobatouch.com/" thumbnail="/tb-bobatouch.png" title="Boba Touch" description="Website" />
           <WorkItem2 id="personalwebsite" href="/" thumbnail="/tb-personalwebsite.png" title="Personal Website" description="Website" />
           <WorkItem2 id="3dmodel" href="/" thumbnail="/tb-3dmodel.png" title="3D Desk Model" description="3D Modeling" />
