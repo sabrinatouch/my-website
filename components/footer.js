@@ -9,12 +9,12 @@ const Footer = props => {
     return (
         <Box                 
             align="center"
-            fontSize={14}
+            fontSize={24}
             mt={32}
             mb={16}
         >
             <Box mt={4}>
-                <Text>Thanks for stopping by!</Text>
+                🍵 👩🏻‍💻 🪴
             </Box>
         </Box>
     )

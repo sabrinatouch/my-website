@@ -14,6 +14,7 @@ import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import Preloader from '../components/Preloader'
 import { Element } from 'react-scroll'
+import Footer from '../components/footer'
 
 const Home = () => {
     useEffect(() => {
@@ -73,6 +74,7 @@ const Home = () => {
             <Contact2 />
           </Element>
         </Box>
+        <Footer />
       </Box>
     )
 }

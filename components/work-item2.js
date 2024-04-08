@@ -24,14 +24,16 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     )
 }
 
-const WorkItem2 = ({id, href, thumbnail, title, description}) => {
+const WorkItem2 = props => {
+    const {id, href, thumbnail, title, description, target, path} = props
 
     return (
         <Box pl={2} pr={2}>
             <TransitionAnimation>
                 <LinkItem
                     href={href}
-                    target="_blank"
+                    path={path}
+                    target={target}
                 >
                     <HoverAnimation>
                         <Image src={thumbnail} borderRadius='15px' style={{ width: '100%', overflow: 'hidden' }} />

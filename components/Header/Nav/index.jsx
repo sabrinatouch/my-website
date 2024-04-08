@@ -102,6 +102,7 @@ export default function index() {
                         return (
                             <motion.a
                                 key={`f_${i}`}
+                                target="_blank"
                                 href={link.href} 
                                 variants={slideIn}
                                 custom={i}
