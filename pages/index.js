@@ -15,6 +15,7 @@ import { useEffect } from 'react'
 import Preloader from '../components/Preloader'
 import { Element } from 'react-scroll'
 import Footer from '../components/footer'
+import MainLayout from '../components/layouts/main'
 
 const Home = () => {
     useEffect(() => {
@@ -29,6 +30,7 @@ const Home = () => {
     })
 
     return (
+      <MainLayout>
       <Box width='100%' height='100%' overflow='hidden'>
         <Preloader />
         <Element name="home">
@@ -76,6 +78,7 @@ const Home = () => {
         </Box>
         <Footer />
       </Box>
+      </MainLayout>
     )
 }
 

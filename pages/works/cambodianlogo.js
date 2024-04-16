@@ -1,14 +1,8 @@
 import {
-    Text,
     Box,
-    Heading,
-    UnorderedList,
-    ListItem,
-    SimpleGrid,
     chakra
 } from '@chakra-ui/react'
 import Image from 'next/image'
-import Section from '../../components/section'
 
 const ThumbnailImage = chakra(Image, {
     shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop)
@@ -16,7 +10,7 @@ const ThumbnailImage = chakra(Image, {
 
 const Work = () => {
     return (
-        <Box align="center">
+        <Box maxWidth='100%' align="center" mt={18} mb={20}>
             <Image
                 src="/cambodianlogo1.png"
                 alt={'Cambodian Logo'}
