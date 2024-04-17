@@ -24,7 +24,7 @@ const AboutMe = () => {
                         </Heading>
                         <TransitionAnimation>
                             <Text mt={8} variant="sub-title">
-                                I'm a Cambodian-American creative technologist based in Denver, Colorado. My expertise lies in engineering user interfaces, graphic design, and UX design, bringing together technical elements while maintaining the visual appeal.
+                                I&apos;m a Cambodian-American creative technologist based in Denver, Colorado. My expertise lies in engineering user interfaces, graphic design, and UX design, bringing together technical elements while maintaining the visual appeal.
                             </Text>
                             <Text mt={4} variant="sub-title">
                                 Outside of work I enjoy playing volleyball, karaoke, trying new matcha powders, and playing PC games. 
@@ -33,7 +33,7 @@ const AboutMe = () => {
                     </Box>
                     <Box display="flex" alignItems="center" justifyContent="center">
                         <TransitionAnimationRight>
-                            <Image src={'./selfie.png'} borderRadius='15px' />
+                            <Image src={'./selfie.png'} borderRadius='15px' alt="selfie" />
                             <Text mt={4}>
                                 📍 Kyoto, Japan
                             </Text>

@@ -25,7 +25,7 @@ const variants = {
     }
 }
 
-export default function index() {
+export default function Index() {
     // Creating a state to track if the menu is open or close
     const [isActive, setIsActive] = useState(false);
 

@@ -36,7 +36,7 @@ const WorkItem2 = props => {
                     target={target}
                 >
                     <HoverAnimation>
-                        <Image src={thumbnail} borderRadius='15px' style={{ width: '100%', overflow: 'hidden' }} />
+                        <Image src={thumbnail} borderRadius='15px' style={{ width: '100%', overflow: 'hidden' }} alt="thumbnail" />
                     </HoverAnimation>
                         <Box mt={5} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                             <Text variant="sub-title" style={{ lineHeight: '1.1' }}>

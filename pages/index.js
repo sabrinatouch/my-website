@@ -45,7 +45,7 @@ const Home = () => {
                 <Section delay={0.2}>
                   <TransitionAnimationRight>
                     <Heading variant="smaller-sub-title" textAlign="center">
-                      Hello, I'm
+                      Hello, I&apos;m
                     </Heading>
                     <Heading variant="section-title" style={{ lineHeight: '0.9' }} textAlign="center">
                       Sabrina Touch
