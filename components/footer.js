@@ -14,7 +14,7 @@ const Footer = props => {
             mb={16}
         >
             <Box mt={4}>
-                🍵 👩🏻‍💻 🪴
+                🍵 👩🏻‍💻 🌾
             </Box>
         </Box>
     )

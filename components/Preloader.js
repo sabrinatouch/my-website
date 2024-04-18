@@ -16,7 +16,7 @@ const Preloader = () => {
                     👩🏻‍💻
                 </span>
                 <span>
-                    🪴
+                    🌾
                 </span>
             </div>
         </div>
