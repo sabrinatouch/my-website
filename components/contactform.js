@@ -38,7 +38,7 @@ const ContactForm = () => {
         ...prev, //spread out prev bc if we have other properties on the state object, we want to retain those
         values: {
             ...prev.values,
-            [target.name]: target.value,
+            [target.name]: target.value
         }
     }))
 
