@@ -13,9 +13,9 @@ const Footer = props => {
             mt={32}
             mb={16}
         >
-            <Box mt={4}>
+            {/* <Box mt={4}>
                 🍵 👩🏻‍💻 🌾
-            </Box>
+            </Box> */}
         </Box>
     )
 }

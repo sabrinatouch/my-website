@@ -22,12 +22,12 @@ export const FooterLinks = [
         title: "LinkedIn",
         href: "https://linkedin.com/in/sabrinatouch"
     },
-    {
-        title: "Instagram",
-        href: "https://www.instagram.com/sabrinatouch_/"
-    },
-    {
-        title: "YouTube",
-        href: "https://www.youtube.com/@sabrinatouch_"
-    },
+    // {
+    //     title: "Instagram",
+    //     href: "https://www.instagram.com/sabrinatouch_/"
+    // },
+    // {
+    //     title: "YouTube",
+    //     href: "https://www.youtube.com/@sabrinatouch_"
+    // },
 ]

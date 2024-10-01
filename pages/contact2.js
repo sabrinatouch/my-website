@@ -67,7 +67,7 @@ const Contact2 = props => {
                                     >
                                         <IoLogoLinkedin fontSize='24px'/>
                                     </LinkItem>
-                                    <LinkItem
+                                    {/* <LinkItem
                                         href="https://www.instagram.com/sabrinatouch_/"
                                         path={path}
                                         target="_blank"    
@@ -80,14 +80,14 @@ const Contact2 = props => {
                                         target="_blank"    
                                     >
                                         <IoLogoYoutube fontSize='24px'/>
-                                    </LinkItem>
+                                    </LinkItem> */}
                                 </HStack>
                             </Box>
                         </Box>
                         <Box w='md'>
-                            <TransitionAnimationRight>        
+                            {/* <TransitionAnimationRight>         */}
                                 <ContactForm/>
-                            </TransitionAnimationRight> 
+                            {/* </TransitionAnimationRight>  */}
                         </Box>
                     </SimpleGrid>
                 </Box>
