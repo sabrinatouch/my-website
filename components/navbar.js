@@ -101,7 +101,7 @@ const Navbar = props => {
                     <VStack>
                         <Box>
                             <VStack>
-                                <LinkItem fontSize={42} onClick={onToggle} href="/" path={path}>
+                                <LinkItem fontSize={42} onClick={onToggle} href="" path={path}>
                                     Home
                                 </LinkItem>
                                 <LinkItem fontSize={42} onClick={onToggle} href="/works" path={path}>

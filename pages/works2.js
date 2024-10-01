@@ -23,29 +23,9 @@ const Works2 = () => {
         </Heading>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
           <WorkItem2 id="bobatouch" href="https://bobatouch.com/" thumbnail="/tb-bobatouch.png" title="Boba Touch" description="Website" target="_blank" />
-          <WorkItem2 id="personalwebsite" href="/" thumbnail="/tb-personalwebsite.png" title="Personal Website" description="Website" />
-          <div
-            onClick={() =>
-              toast({
-                title: 'Under construction',
-                status: 'warning',
-                duration: 3000,
-              })
-            }
-          >
-            <WorkItem2 id="3dmodel" href="javascript:;" thumbnail="/tb-3dmodel.png" title="3D Desk Model" description="3D Modeling" />
-          </div>
-          <div
-            onClick={() =>
-              toast({
-                title: 'Under construction',
-                status: 'warning',
-                duration: 3000,
-              })
-            }
-          >
-          <WorkItem2 id="khmerconference" href="javascript:;" thumbnail="/tb-cambodianlogo.png" title="Cambodian Inspired Logo" description="Graphic Design" />
-          </div>
+          <WorkItem2 id="personalwebsite" href="https://sabrinatouch.com" thumbnail="/tb-personalwebsite.png" title="Personal Website" description="Website" />
+          <WorkItem2 id="3dmodel" href="/underconstruction" thumbnail="/tb-3dmodel.png" title="3D Desk Model" description="3D Modeling" />
+          <WorkItem2 id="khmerconference" href="/underconstruction" thumbnail="/tb-cambodianlogo.png" title="Cambodian Inspired Logo" description="Graphic Design" />
         </SimpleGrid>
       </Section>
     )
