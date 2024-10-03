@@ -15,7 +15,7 @@ const Main = ({ children, router }) => {
             <TransitionAnimationTop>
                 <Header />
             </TransitionAnimationTop>
-            <Container maxW='8xl' pl={14} pr={14} mt={24}>
+            <Container maxW='6xl'>
                 {children}
             </Container>
         </Box>
