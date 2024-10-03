@@ -25,7 +25,7 @@ const Works2 = () => {
           <WorkItem2 id="bobatouch" href="https://bobatouch.com/" thumbnail="/tb-bobatouch.png" title="Boba Touch" description="Website" target="_blank" />
           <WorkItem2 id="personalwebsite" href="https://sabrinatouch.com" thumbnail="/tb-personalwebsite.png" title="Personal Website" description="Website" />
           <WorkItem2 id="3dmodel" href="/underconstruction" thumbnail="/tb-3dmodel.png" title="3D Desk Model" description="3D Modeling" />
-          <WorkItem2 id="khmerconference" href="/underconstruction" thumbnail="/tb-cambodianlogo.png" title="Cambodian Inspired Logo" description="Graphic Design" />
+          <WorkItem2 id="khmerconference" href="/works/cambodianlogo" thumbnail="/tb-cambodianlogo.png" title="Cambodian Inspired Logo" description="Graphic Design" />
         </SimpleGrid>
       </Section>
     )

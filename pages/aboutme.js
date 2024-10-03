@@ -17,17 +17,17 @@ const AboutMe = () => {
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={14}>
                     <Box display={{ base: 'relative', md: 'flex' }} alignItems="flex-start" justifyContent="center" flexDirection="column">
                         <Heading variant="section-title" display={{ base: 'none', md: 'flex' }} lineHeight="0.9">
-                            About Me
+                            About
                         </Heading>
                         <Heading variant="sub-title" display={{ base: 'flex', md: 'none' }}>
-                            About Me
+                            About
                         </Heading>
                         <TransitionAnimation>
                             <Text mt={8} variant="sub-title">
                                 I&apos;m a Cambodian-American creative technologist based in Denver, Colorado. My expertise lies in engineering user interfaces, graphic design, and UX design, bringing together technical elements while maintaining the visual appeal.
                             </Text>
                             <Text mt={4} variant="sub-title">
-                                Outside of work I enjoy playing volleyball, karaoke, trying new matcha powders, and playing PC games. 
+                                I enjoy playing volleyball, karaoke, trying new matcha powders, and playing PC games. 
                             </Text>
                         </TransitionAnimation>
                     </Box>
