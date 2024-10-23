@@ -29,7 +29,7 @@ const Work = () => {
                             Cambodian Inspired Logo
                         </Heading>
                         <Text>
-                            This logo, representing culture and unity, is inspired by kramas and Khmer kbach in a modern display for a networking conference aiming to foster connections within the Cambodian community.
+                            This logo, representing culture and unity, is inspired by kramas and Khmer kbach in a modern display for a networking conference aiming to foster connections within the Cambodian community to rise and uplift generations old and new.
                         </Text>
                     </SimpleGrid>
                 </Box>
