@@ -29,7 +29,7 @@ const Work = () => {
                             Cambodian Inspired Logo
                         </Heading>
                         <Text>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            This logo, representing culture and unity, is inspired by kramas and Khmer kbach in a modern display for a networking conference aiming to foster connections within the Cambodian community.
                         </Text>
                     </SimpleGrid>
                 </Box>
@@ -41,28 +41,76 @@ const Work = () => {
                     style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '15px' }}
                 />
                 <Box pt={16} pb={16}>
-                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '2', md: '6' }}>
+                    <Heading pb={4}>
+                        Inspiration
+                    </Heading>
+                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '6', md: '6' }}>
                         <Text>
-                            <Heading fontSize={'xl'} pb={4}>
-                                Inspiration
-                            </Heading>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Khmer &#40;Cambodian&#41; kbach refers to traditional decorative art and ornamental patterns that are used in architecture, sculpture, painting, and various forms of craftwork. The term "kbach" ក្បាច់  means "style" or "pattern" in Khmer, and it is a deeply significant part of Cambodian cultural heritage, often used to adorn temples, royal buildings, and religious objects. Kbach motifs are highly stylized and symbolic, often drawing inspiration from nature and celestial shapes symbolizing harmony, balance, and spirtuality.
                         </Text>
                         <Text>
-                            <Heading fontSize={'xl'} pb={4}>
-                                Title
-                            </Heading>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            The krama is a traditional and versatile scarf that holds profound cultural significance in Cambodia. Typically made from cotton or silk and featuring a checkered pattern in various colors, the krama serves many purposes: it offers protection from dust and sun, is used to carry goods, and can even be given as a gift of honor, much like a Hawaiian lei. More than just a practical garment, it symbolizes Cambodian identity, heritage, and way of life used by people of all ages and walks of life.
                         </Text>
                     </SimpleGrid>
-                    <Image
-                        src="/sketch1.png"
-                        alt={'Sketch 1'}
-                        width={400}
-                        height={300}
-                        style={{ borderRadius: '15px' }}
-                    />
                 </Box>
+                <Image
+                    src="/sketches.gif"
+                    alt={'Sketch 1'}
+                    width={1920}
+                    height={1080}
+                    style={{ borderRadius: '15px' }}
+                />
+                <Box pt={16} pb={16}>
+                    <Heading pb={4}>
+                        Typeface
+                    </Heading>
+                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '6', md: '6' }}>
+                        <Text>
+                            PP Agrandir was selected as the primary typeface for its visual similarity to one of Cambodia&#39;s iconic landmarks&#44; Angkor Wat. The wide&#44; stretched form of the characters mirrors the temple&#39;s horizontal grandeur&#44; while the combination of curves and straight lines reflects the intricate details of its architecture.
+                        </Text>
+                        <Text>
+                            Additionally&#44; the letter &#39;R&#39; was creatively merged with the Khmer character &#39;រ&#39;&#44; which begins the Khmer word for &#39;rise&#39; &#40;រហ&#41;&#44; further emphasizing cultural relevance. Noto Sans Khmer was chosen for the Khmer script&#44; as its font weight aligns seamlessly with PP Agrandir&#44; creating a cohesive and streamlined typographic design.
+                        </Text>
+                    </SimpleGrid>
+                </Box>
+                <Image
+                    src="/final7.jpg"
+                    alt={'Banner Text'}
+                    width={1920}
+                    height={1080}
+                    style={{ borderRadius: '15px' }}
+                />
+                <Image
+                    src="/final2.jpg"
+                    alt={'Banner Text'}
+                    width={1920}
+                    height={1080}
+                    style={{ borderRadius: '15px' }}
+                />
+                <Box pt={16} pb={16}>
+                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '6', md: '6' }}>    
+                        <Text pb={16}>
+                            <Heading pb={4}>
+                                Colors
+                            </Heading>
+                            Creating a custom color palette offered limitless possibilities. My goal was to design a palette that both evoked the essence of Cambodian culture and introduced a fresh, modern feel. Orange was chosen as the primary color to symbolize the brand’s themes of rise and match the fire symbolism of the logo. The secondary color, a deep teal, reflects Cambodia’s lush jungles and nature, while also adding a sense of richness, symbolizing the country’s deep history. This dark teal serves as a backdrop that allows the orange to stand out and glow.
+                        </Text>
+                        <Image
+                            src="/final8.jpg"
+                            alt={'Banner Text'}
+                            width={960}
+                            height={960}
+                            style={{ borderRadius: '15px' }}
+                        />
+                    </SimpleGrid>
+                </Box>
+                <Image
+                    src="/banner_text.jpg"
+                    alt={'Banner Text'}
+                    width={1920}
+                    height={1080}
+                    style={{ borderRadius: '15px' }}
+                />
             </Box>
         </MainLayout>
     )
