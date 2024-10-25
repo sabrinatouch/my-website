@@ -14,7 +14,6 @@ import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
 import Preloader from '../components/Preloader'
 import { Element } from 'react-scroll'
-import Footer from '../components/footer'
 import MainLayout from '../components/layouts/main'
 
 const Home = () => {
@@ -34,8 +33,8 @@ const Home = () => {
         <Box width='100%' height='100%' overflow='hidden'>
           {/* <Preloader /> */}
           <Element name="home">
-          <Box height={('calc(100vh - 200px)')}>
-              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '2', md: '14' }} height='100%'>
+          <Box>
+              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '2', md: '14' }} mt={{ base: '20' }} height='100%'>
                 <AspectRatio ratio={1}>
                   <Box>
                     <ModelTest />
@@ -47,7 +46,7 @@ const Home = () => {
                       <Heading variant="smaller-sub-title" textAlign="center">
                         Hello, I&apos;m
                       </Heading>
-                      <Heading variant="section-title" style={{ lineHeight: '0.9' }} textAlign="center">
+                      <Heading variant="section-title" style={{ lineHeight: '0.9' }} fontSize={{ base: '52px', md: '86px'}} textAlign="center">
                         Sabrina Touch
                       </Heading>
                       <Box display="flex" alignItems="center" justifyContent="center" mt={6}>
@@ -76,7 +75,6 @@ const Home = () => {
               <Contact2 />
             </Element>
           </Box>
-          <Footer />
         </Box>
       </MainLayout>
     )
