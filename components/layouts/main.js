@@ -12,12 +12,14 @@ const Main = ({ children, router }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
+            {/* <Navbar /> */}
             <TransitionAnimationTop>
                 <Header />
             </TransitionAnimationTop>
-            <Container maxW='8xl' pl={14} pr={14} mt={24}>
+            <Container maxW='8xl'>
                 {children}
             </Container>
+            <Footer />
         </Box>
     )
 }

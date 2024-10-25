@@ -8,28 +8,8 @@ import {
 } from '@chakra-ui/react'
 import ContactForm from '../components/contactform'
 import TransitionAnimationRight from '../components/transitionanimationright'
-import { IoLogoGithub, IoLogoLinkedin, IoLogoYoutube, IoLogoInstagram } from 'react-icons/io5'
-import NextLink from 'next/link'
-
-const LinkItem = ({ href, path, target, children, ...props }) => {
-    const active = path === href
-
-    return (
-        <Link
-            fontSize='20px'
-            href={href}
-            as={NextLink}
-            target={target}
-            {...props}
-            textDecoration={active ? 'underline' : 'none'}
-        >
-            {children}
-        </Link>
-    )
-}
 
 const Contact2 = props => {
-    const { path } = props
     return (
         <Box>
             <Box>
@@ -44,47 +24,7 @@ const Contact2 = props => {
                 </Heading>
                 <Box display="flex" alignItems="center" justifyContent="center">
                     <SimpleGrid columns={{ base: 1 }} spacing={10}>
-                        <Box display={{ base: 'flex', lg: 'flex' }} alignItems="center" justifyContent="center" flexDirection="column">
-                            <Box 
-                                display="flex"
-                                align="center"
-                                alignItems="center"
-                                justifyContent="center"
-                            >
-                                {/* &copy; {new Date().getFullYear()} Sabrina Touch. All Rights Reserved.  */}
-                                <HStack>
-                                    <LinkItem
-                                        href="https://github.com/sabrinatouch"
-                                        path={path}
-                                        target="_blank"
-                                    >
-                                        <IoLogoGithub fontSize='24px' />
-                                    </LinkItem>
-                                    <LinkItem
-                                        href="https://linkedin.com/in/sabrinatouch"
-                                        path={path}
-                                        target="_blank"
-                                    >
-                                        <IoLogoLinkedin fontSize='24px'/>
-                                    </LinkItem>
-                                    {/* <LinkItem
-                                        href="https://www.instagram.com/sabrinatouch_/"
-                                        path={path}
-                                        target="_blank"    
-                                    >
-                                        <IoLogoInstagram fontSize='24px'/>
-                                    </LinkItem>
-                                    <LinkItem
-                                        href="https://www.youtube.com/@sabrinatouch_"
-                                        path={path}
-                                        target="_blank"    
-                                    >
-                                        <IoLogoYoutube fontSize='24px'/>
-                                    </LinkItem> */}
-                                </HStack>
-                            </Box>
-                        </Box>
-                        <Box w='md'>
+                        <Box w='sm'>
                             {/* <TransitionAnimationRight>         */}
                                 <ContactForm/>
                             {/* </TransitionAnimationRight>  */}
