@@ -58,7 +58,7 @@ const Home = () => {
                   </Section>
                 </Box>
               </SimpleGrid>
-          </Box>
+            </Box>
           </Element>
           <Box mt={32}>
             <Element name="aboutme">
