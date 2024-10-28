@@ -59,6 +59,7 @@ const Work = () => {
                     width={1920}
                     height={1080}
                     style={{ borderRadius: '15px' }}
+                    priority
                 />
                 <Box pt={16} pb={16}>
                     <Heading pb={4}>
@@ -88,11 +89,11 @@ const Work = () => {
                     style={{ borderRadius: '15px' }}
                 />
                 <Box pt={16} pb={16}>
-                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '6', md: '6' }}>    
+                    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '6', md: '6' }}>
+                        <Heading pb={4}>
+                            Colors
+                        </Heading>    
                         <Text pb={16}>
-                            <Heading pb={4}>
-                                Colors
-                            </Heading>
                             Creating a custom color palette offered limitless possibilities. My goal was to design a palette that both evoked the essence of Cambodian culture and introduced a fresh, modern feel. Orange was chosen as the primary color to symbolize the brand’s themes of rise and match the fire symbolism of the logo. The secondary color, a deep teal, reflects Cambodia’s lush jungles and nature, while also adding a sense of richness, symbolizing the country’s deep history. This dark teal serves as a backdrop that allows the orange to stand out and glow.
                         </Text>
                         <Image
