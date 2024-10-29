@@ -1,35 +1,25 @@
 import Logo from './logo'
 import { 
     Box, 
-    Container,
-    IconButton,
     Flex,
     Stack,
     Text,
-    VStack,
-    HStack,
-    SlideFade,
-    Fade,
     useDisclosure,
     useColorModeValue,
-    Link,
     Spacer
  } from '@chakra-ui/react'
-import { HamburgerIcon, SmallCloseIcon } from '@chakra-ui/icons'
-import NextLink from 'next/link'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { Link } from 'react-scroll'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
-    const active = path === href
-
+const LinkItem = ({href, children}) => {
     return (
-        <Link
-            fontSize='21px'
-            href={href}
-            as={NextLink}
-            target={target}
-            {...props}
-            textDecoration={active ? 'underline' : 'none'}
+        <Link 
+            activeClass="active"
+            to={href} 
+            smooth={true}
+            spy={true}
+            offset={-50}
+            style={{ cursor: 'pointer' }}
         >
             {children}
         </Link>
@@ -37,9 +27,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 }
 
 const Navbar = props => {
-    const { path } = props
-    const { isOpen, onToggle } = useDisclosure()
-
     return (
         <Box>
             <Box
@@ -49,106 +36,38 @@ const Navbar = props => {
                 maxW="10xl"
                 position="relative"
                 p={8}
-                bg={useColorModeValue('#ffffff', '#202023')}
+                // bg={useColorModeValue('#ffffff', '#202023')}
+                color={'blackAlpha.600'}
                 {...props}
                 marginInline='auto'
-                zIndex={1}
             >
                 <Flex>
-                    <Logo />
+                    <Text>
+                        <span style={{ fontSize: '24px'}}>sabrina touch</span> . com
+                    </Text>
                     <Spacer />
                     <Box align="right">
-                        <Box pl={2} align="right" display={{ base: 'none', lg: 'inline-block'}}>
+                        <Box pl={2} align="right" display={{ base:  'inline-block'}}>
                             <Stack
-                                direction={{ base: 'none', md: 'row' }}
-                                alignItems='center'
+                                direction={{ base: 'column', md: 'row' }}
+                                alignItems={{ base: 'flex-end', md: 'center' }} 
                                 h='40px'
+                                gap={{ base: '0', md: '2' }}
                             >
-                                <LinkItem href="/about" path={path}>
-                                    About
+                                <LinkItem href="works">
+                                    Works,
                                 </LinkItem>
-                                <LinkItem href="/works" path={path}>
-                                    Works
+                                <LinkItem href="aboutme">
+                                    About,
                                 </LinkItem>
-                                <LinkItem href="/contact" path={path}>
+                                <LinkItem href="contact">
                                     Contact
                                 </LinkItem>
                             </Stack>
                         </Box>
                     </Box>
-                    <Box align="right">
-                        <Box align="right" display={{ base: 'inline-block', lg: 'none'}} style={{ position: 'fixed', top: '32px', right: '32px', zIndex: '-1' }}>
-                            <IconButton
-                                onClick={onToggle}
-                                aria-label="Nav menu"
-                                icon={isOpen ? <SmallCloseIcon /> : <HamburgerIcon />}
-                            ></IconButton>
-                        </Box>
-                    </Box>
                 </Flex>
             </Box>
-            <SlideFade in={isOpen} unmountOnExit>
-                <Container
-                    zIndex={2}
-                    alignItems='center'
-                    justifyContent='center'
-                    align='center'
-                    fontSize='30'
-                    position='fixed'
-                    height='100vh'
-                    display={{ base: 'flex', md: 'none' }}
-                >
-                    <VStack>
-                        <Box>
-                            <VStack>
-                                <LinkItem fontSize={42} onClick={onToggle} href="" path={path}>
-                                    Home
-                                </LinkItem>
-                                <LinkItem fontSize={42} onClick={onToggle} href="/works" path={path}>
-                                    Works
-                                </LinkItem>
-                                <LinkItem fontSize={42} onClick={onToggle} href="/contact" path={path}>
-                                    Contact
-                                </LinkItem>
-                            </VStack>
-                        </Box>
-                        <Box pt={36}>
-                            <HStack>
-                                <LinkItem
-                                    href="https://github.com/sabrinatouch"
-                                    path={path}
-                                    target="_blank"
-                                >
-                                    <IoLogoGithub font-size='42px'/>
-                                </LinkItem>
-                                <LinkItem
-                                    href="https://linkedin.com/in/sabrinatouch"
-                                    path={path}
-                                    target="_blank"
-                                >
-                                    <IoLogoLinkedin font-size='42px' />
-                                </LinkItem>
-                            </HStack>
-                        </Box>
-                    </VStack>
-                </Container>
-            </SlideFade>
-            <Fade in={isOpen} unmountOnExit>
-                <Box
-                    as='bgbox'
-                    position='absolute'
-                    bg={useColorModeValue('#ffffff60', '#20202360')}
-                    backdropFilter='auto'
-                    backdropBlur='10px'
-                    w='100%'
-                    zIndex={1}
-                    top='104px'
-                    left='0'
-                    bottom='0'
-                    display={{ base: 'flex', md: 'none' }}
-                >
-                </Box>
-            </Fade>
         </Box>
     )
 }
