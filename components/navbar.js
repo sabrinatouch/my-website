@@ -1,40 +1,15 @@
 import Logo from './logo'
 import { 
     Box, 
-    Container,
-    IconButton,
     Flex,
     Stack,
     Text,
-    VStack,
-    HStack,
-    SlideFade,
-    Fade,
     useDisclosure,
     useColorModeValue,
     Spacer
  } from '@chakra-ui/react'
-import { HamburgerIcon, SmallCloseIcon } from '@chakra-ui/icons'
-import NextLink from 'next/link'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { Link } from 'react-scroll'
-
-// const LinkItem = ({ href, path, target, children, ...props }) => {
-//     const active = path === href
-
-//     return (
-//         <Link
-//             fontSize='21px'
-//             href={href}
-//             as={NextLink}
-//             target={target}
-//             {...props}
-//             textDecoration={active ? 'underline' : 'none'}
-//         >
-//             {children}
-//         </Link>
-//     )
-// }
 
 const LinkItem = ({href, children}) => {
     return (
@@ -52,8 +27,6 @@ const LinkItem = ({href, children}) => {
 }
 
 const Navbar = props => {
-    const { isOpen, onToggle } = useDisclosure()
-
     return (
         <Box>
             <Box
@@ -69,7 +42,6 @@ const Navbar = props => {
                 marginInline='auto'
             >
                 <Flex>
-                    {/* <Logo /> */}
                     <Text>
                         <span style={{ fontSize: '24px'}}>sabrina touch</span> . com
                     </Text>
