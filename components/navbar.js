@@ -36,7 +36,7 @@ import { Link } from 'react-scroll'
 //     )
 // }
 
-const LinkItem = ({href, path, children, ...props}) => {
+const LinkItem = ({href, children}) => {
     return (
         <Link 
             activeClass="active"
@@ -52,7 +52,6 @@ const LinkItem = ({href, path, children, ...props}) => {
 }
 
 const Navbar = props => {
-    const { path } = props
     const { isOpen, onToggle } = useDisclosure()
 
     return (
@@ -70,7 +69,10 @@ const Navbar = props => {
                 marginInline='auto'
             >
                 <Flex>
-                    <Logo />
+                    {/* <Logo /> */}
+                    <Text>
+                        <span style={{ fontSize: '24px'}}>sabrina touch</span> . com
+                    </Text>
                     <Spacer />
                     <Box align="right">
                         <Box pl={2} align="right" display={{ base:  'inline-block'}}>
@@ -78,15 +80,15 @@ const Navbar = props => {
                                 direction={{ base: 'column', md: 'row' }}
                                 alignItems={{ base: 'flex-end', md: 'center' }} 
                                 h='40px'
-                                gap={{ base: '0' }}
+                                gap={{ base: '0', md: '2' }}
                             >
-                                <LinkItem href="works" path={path}>
-                                    Works
+                                <LinkItem href="works">
+                                    Works,
                                 </LinkItem>
-                                <LinkItem href="aboutme" path={path}>
-                                    About
+                                <LinkItem href="aboutme">
+                                    About,
                                 </LinkItem>
-                                <LinkItem href="contact" path={path}>
+                                <LinkItem href="contact">
                                     Contact
                                 </LinkItem>
                             </Stack>
