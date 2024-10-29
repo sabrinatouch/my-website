@@ -12,24 +12,39 @@ import {
     Fade,
     useDisclosure,
     useColorModeValue,
-    Link,
     Spacer
  } from '@chakra-ui/react'
 import { HamburgerIcon, SmallCloseIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { Link } from 'react-scroll'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
-    const active = path === href
+// const LinkItem = ({ href, path, target, children, ...props }) => {
+//     const active = path === href
 
+//     return (
+//         <Link
+//             fontSize='21px'
+//             href={href}
+//             as={NextLink}
+//             target={target}
+//             {...props}
+//             textDecoration={active ? 'underline' : 'none'}
+//         >
+//             {children}
+//         </Link>
+//     )
+// }
+
+const LinkItem = ({href, path, children, ...props}) => {
     return (
-        <Link
-            fontSize='21px'
-            href={href}
-            as={NextLink}
-            target={target}
-            {...props}
-            textDecoration={active ? 'underline' : 'none'}
+        <Link 
+            activeClass="active"
+            to={href} 
+            smooth={true}
+            spy={true}
+            offset={-50}
+            style={{ cursor: 'pointer' }}
         >
             {children}
         </Link>
@@ -60,17 +75,18 @@ const Navbar = props => {
                     <Box align="right">
                         <Box pl={2} align="right" display={{ base:  'inline-block'}}>
                             <Stack
-                                direction={{ base: 'none', md: 'row' }}
-                                alignItems='center'
+                                direction={{ base: 'column', md: 'row' }}
+                                alignItems={{ base: 'flex-end', md: 'center' }} 
                                 h='40px'
+                                gap={{ base: '0' }}
                             >
-                                <LinkItem href="/works" path={path}>
+                                <LinkItem href="works" path={path}>
                                     Works
                                 </LinkItem>
-                                <LinkItem href="/about" path={path}>
+                                <LinkItem href="aboutme" path={path}>
                                     About
                                 </LinkItem>
-                                <LinkItem href="/contact" path={path}>
+                                <LinkItem href="contact" path={path}>
                                     Contact
                                 </LinkItem>
                             </Stack>
