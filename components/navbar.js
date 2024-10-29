@@ -49,26 +49,26 @@ const Navbar = props => {
                 maxW="10xl"
                 position="relative"
                 p={8}
-                bg={useColorModeValue('#ffffff', '#202023')}
+                // bg={useColorModeValue('#ffffff', '#202023')}
+                color={'blackAlpha.600'}
                 {...props}
                 marginInline='auto'
-                zIndex={1}
             >
                 <Flex>
                     <Logo />
                     <Spacer />
                     <Box align="right">
-                        <Box pl={2} align="right" display={{ base: 'none', lg: 'inline-block'}}>
+                        <Box pl={2} align="right" display={{ base:  'inline-block'}}>
                             <Stack
                                 direction={{ base: 'none', md: 'row' }}
                                 alignItems='center'
                                 h='40px'
                             >
-                                <LinkItem href="/about" path={path}>
-                                    About
-                                </LinkItem>
                                 <LinkItem href="/works" path={path}>
                                     Works
+                                </LinkItem>
+                                <LinkItem href="/about" path={path}>
+                                    About
                                 </LinkItem>
                                 <LinkItem href="/contact" path={path}>
                                     Contact
@@ -76,79 +76,8 @@ const Navbar = props => {
                             </Stack>
                         </Box>
                     </Box>
-                    <Box align="right">
-                        <Box align="right" display={{ base: 'inline-block', lg: 'none'}} style={{ position: 'fixed', top: '32px', right: '32px', zIndex: '-1' }}>
-                            <IconButton
-                                onClick={onToggle}
-                                aria-label="Nav menu"
-                                icon={isOpen ? <SmallCloseIcon /> : <HamburgerIcon />}
-                            ></IconButton>
-                        </Box>
-                    </Box>
                 </Flex>
             </Box>
-            <SlideFade in={isOpen} unmountOnExit>
-                <Container
-                    zIndex={2}
-                    alignItems='center'
-                    justifyContent='center'
-                    align='center'
-                    fontSize='30'
-                    position='fixed'
-                    height='100vh'
-                    display={{ base: 'flex', md: 'none' }}
-                >
-                    <VStack>
-                        <Box>
-                            <VStack>
-                                <LinkItem fontSize={42} onClick={onToggle} href="" path={path}>
-                                    Home
-                                </LinkItem>
-                                <LinkItem fontSize={42} onClick={onToggle} href="/works" path={path}>
-                                    Works
-                                </LinkItem>
-                                <LinkItem fontSize={42} onClick={onToggle} href="/contact" path={path}>
-                                    Contact
-                                </LinkItem>
-                            </VStack>
-                        </Box>
-                        <Box pt={36}>
-                            <HStack>
-                                <LinkItem
-                                    href="https://github.com/sabrinatouch"
-                                    path={path}
-                                    target="_blank"
-                                >
-                                    <IoLogoGithub font-size='42px'/>
-                                </LinkItem>
-                                <LinkItem
-                                    href="https://linkedin.com/in/sabrinatouch"
-                                    path={path}
-                                    target="_blank"
-                                >
-                                    <IoLogoLinkedin font-size='42px' />
-                                </LinkItem>
-                            </HStack>
-                        </Box>
-                    </VStack>
-                </Container>
-            </SlideFade>
-            <Fade in={isOpen} unmountOnExit>
-                <Box
-                    as='bgbox'
-                    position='absolute'
-                    bg={useColorModeValue('#ffffff60', '#20202360')}
-                    backdropFilter='auto'
-                    backdropBlur='10px'
-                    w='100%'
-                    zIndex={1}
-                    top='104px'
-                    left='0'
-                    bottom='0'
-                    display={{ base: 'flex', md: 'none' }}
-                >
-                </Box>
-            </Fade>
         </Box>
     )
 }

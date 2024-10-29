@@ -61,13 +61,13 @@ const Home = () => {
             </Box>
           </Element>
           <Box mt={32}>
-            <Element name="aboutme">
-              <AboutMe />
+            <Element name="works">
+              <Works2 />
             </Element>
           </Box>
           <Box mt={32}>
-            <Element name="works">
-              <Works2 />
+            <Element name="aboutme">
+              <AboutMe />
             </Element>
           </Box>
           <Box mt={32}>

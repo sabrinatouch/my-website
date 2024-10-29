@@ -29,9 +29,8 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 const Footer = props => {
     const { path } = props
     return (
-        <Box           
-            bgColor={'gray.800'}     
-            color={'#c9fd74'} 
+        <Box              
+            color={'blackAlpha.400'} 
             height='fit-content'
             borderRadius={'18px 18px 0px 0px'}
             p={8}
@@ -43,7 +42,7 @@ const Footer = props => {
                 alignItems="center"
                 justifyContent="space-between"
             >
-                <Text variant="sub-title" color={'#c9fd74'}>&copy; {new Date().getFullYear()} Sabrina Touch</Text>
+                <Text variant="sub-title" color={'blackAlpha.400'}>&copy; {new Date().getFullYear()} Sabrina Touch</Text>
                 <HStack>
                     <LinkItem
                         href="https://github.com/sabrinatouch"
