@@ -1,6 +1,6 @@
 
 import { Box, Container, Text, AspectRatio } from '@chakra-ui/react'
-import Navbar from '../navbar'
+import Navbar from '../Navbar'
 import Head from 'next/head'
 import Footer from '../footer'
 import Header from '../Header'

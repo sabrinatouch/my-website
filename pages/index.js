@@ -12,7 +12,6 @@ import Contact2 from '../pages/contact2'
 import AboutMe from '../pages/aboutme'
 import Lenis from '@studio-freight/lenis'
 import { useEffect } from 'react'
-import Preloader from '../components/Preloader'
 import { Element } from 'react-scroll'
 import MainLayout from '../components/layouts/main'
 
@@ -31,7 +30,6 @@ const Home = () => {
     return (
       <MainLayout>
         <Box width='100%' height='100%' overflow='hidden'>
-          {/* <Preloader /> */}
           <Element name="home">
           <Box>
               <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '2', md: '14' }} mt={{ base: '20' }} height='100%'>

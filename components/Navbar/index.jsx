@@ -1,4 +1,7 @@
-import Logo from './logo'
+// Navbar
+'use client'
+
+import { useState } from 'react'
 import { 
     Box, 
     Flex,
@@ -10,16 +13,17 @@ import {
  } from '@chakra-ui/react'
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { Link } from 'react-scroll'
+import styles from './style.module.scss'
 
 const LinkItem = ({href, children}) => {
     return (
-        <Link 
+        <Link
+            className={styles.navbar}
             activeClass="active"
             to={href} 
             smooth={true}
             spy={true}
             offset={-50}
-            style={{ cursor: 'pointer' }}
         >
             {children}
         </Link>

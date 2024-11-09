@@ -1,6 +1,5 @@
 import Chakra from '../components/chakra'
 import Fonts from '../components/fonts'
-import './preloader.css'
 
 function Website({ Component, pageProps, router }) {
     return (
