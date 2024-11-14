@@ -1,7 +1,5 @@
 // Navbar
-'use client'
 
-import { useState } from 'react'
 import { 
     Box, 
     Flex,
@@ -9,11 +7,15 @@ import {
     Text,
     useDisclosure,
     useColorModeValue,
-    Spacer
+    Spacer,
+    Button,
+    Heading
  } from '@chakra-ui/react'
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { useState } from 'react'
+import { IoLogoGithub, IoLogoLinkedin, IoClipboard, IoCheckmarkCircleOutline } from 'react-icons/io5'
 import { Link } from 'react-scroll'
 import styles from './style.module.scss'
+import Logo from '../logo'
 
 const LinkItem = ({href, children}) => {
     return (
@@ -31,26 +33,47 @@ const LinkItem = ({href, children}) => {
 }
 
 const Navbar = props => {
+    const [text, setText] = useState('Email');
+    const [bgColor, setBgColor] = useState('whiteAlpha.900')
+    const [hasCopied, setHasCopied] = useState(false);
+
+    async function CopyToClipboard() {
+        try {
+            await navigator.clipboard.writeText("sabrinajindatouch@gmail.com");
+            setText('Copied');
+            setBgColor('blackAlpha.300');
+            setHasCopied(true);
+        } catch (error) {
+            console.error(error.message);
+        }
+    }
+
     return (
         <Box>
             <Box
                 as="nav"
                 w="100%"
-                h="104px"
                 maxW="10xl"
                 position="relative"
                 p={8}
                 // bg={useColorModeValue('#ffffff', '#202023')}
-                color={'blackAlpha.600'}
                 {...props}
                 marginInline='auto'
             >
-                <Flex>
-                    <Text>
-                        <span style={{ fontSize: '24px'}}>sabrina touch</span> . com
-                    </Text>
+                <Flex alignItems={'center'}>
+                    <Box display='flex'>
+                        <Logo />
+                        <Stack direction={{ base: 'column' }} gap={{ base: '0' }} pl={4}>
+                            <Heading variant='smallest-sub-title'>
+                                Sabrina Touch
+                            </Heading>
+                            <Text fontSize='16px'>
+                                UI Developer
+                            </Text>
+                        </Stack>
+                    </Box>
                     <Spacer />
-                    <Box align="right">
+                    {/* <Box align="right">
                         <Box pl={2} align="right" display={{ base:  'inline-block'}}>
                             <Stack
                                 direction={{ base: 'column', md: 'row' }}
@@ -67,6 +90,19 @@ const Navbar = props => {
                                 <LinkItem href="contact">
                                     Contact
                                 </LinkItem>
+                            </Stack>
+                        </Box>
+                    </Box> */}
+                    <Box align="right" zIndex={2}>
+                        <Box pl={2} align="right" display={{ base: 'inline-block' }}>
+                            <Stack direction={'row'}>
+                                <Button onClick={() => CopyToClipboard()} variant='solid' backgroundColor={bgColor}>
+                                    {text}
+                                    {hasCopied ? <span style={{ marginLeft: '2px' }}><IoCheckmarkCircleOutline /></span> : null}
+                                </Button>
+                                <Button backgroundColor={'whiteAlpha.900'}>
+                                    Resume
+                                </Button>
                             </Stack>
                         </Box>
                     </Box>

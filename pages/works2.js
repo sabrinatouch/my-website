@@ -15,10 +15,7 @@ const Works2 = () => {
 
     return (
       <Section delay={0.2}>
-        <Heading variant="section-title" display={{ base: 'none', md: 'flex' }}>
-          Works
-        </Heading>
-        <Heading variant="sub-title" display={{ base: 'flex', md: 'none' }}>
+        <Heading variant="sub-title" display={{ base: 'flex' }} mb={12}>
           Works
         </Heading>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
