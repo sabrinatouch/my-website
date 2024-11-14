@@ -9,11 +9,12 @@ import Image from 'next/image'
 
 const Main = ({ children, router }) => {
     return (
-        <Box as="main" display="flex" flexDirection="column" minH="100vh">
+        // <Box as="main" display="flex" flexDirection="column" minW='100%' minH={'full'}>
+        <Box as="main" minW='100%' minH={'full'}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
-            <Box display={'flex'} position={'fixed'} zIndex={1} minH={'100vh'} backgroundColor={'whiteAlpha.900'}>
+            <Box display='flex' position='fixed' zIndex={-1} minH='full' backgroundColor={'whiteAlpha.900'}>
                 <Image
                     src="/grainybg.jpg"
                     width={1920}
@@ -23,11 +24,11 @@ const Main = ({ children, router }) => {
                 />
             </Box>
             <Box zIndex={2}>
-                <Navbar/>
+                <Navbar />
                 {/* <TransitionAnimationTop>
                     <Header />
                 </TransitionAnimationTop> */}
-                <Box maxW='full'>
+                <Box>
                     {children}
                 </Box>
                 <Footer />

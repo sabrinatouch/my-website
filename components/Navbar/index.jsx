@@ -51,18 +51,13 @@ const Navbar = props => {
     }
 
     return (
-        <Box>
+        <Box display="flex">
             <Box
                 as="nav"
                 w="100%"
-                maxW="10xl"
-                position="relative"
                 p={8}
-                // bg={useColorModeValue('#ffffff', '#202023')}
-                {...props}
-                marginInline='auto'
             >
-                <Flex alignItems={'center'}>
+                <Flex alignItems={'center'} flexWrap='wrap' gap={2}>
                     <Box display='flex'>
                         <Logo />
                         <Stack direction={{ base: 'column' }} gap={{ base: '0' }} pl={4}>
@@ -96,7 +91,7 @@ const Navbar = props => {
                         </Box>
                     </Box> */}
                     <Box align="right" zIndex={2}>
-                        <Box pl={2} align="right" display={{ base: 'inline-block' }}>
+                        <Box align="right" display={{ base: 'inline-block' }}>
                             <Stack direction={'row'}>
                                 <Button onClick={() => CopyToClipboard()} variant='solid' backgroundColor={bgColor}>
                                     {text}
