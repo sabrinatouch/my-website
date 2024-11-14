@@ -16,8 +16,8 @@ const Logo = () => {
             <Link href="/">
                 <Image 
                     src="/favicon.png"
-                    width={40}
-                    height={40}
+                    width={48}
+                    height={48}
                     style={{borderRadius: '5px'}}
                     alt="self portrait drawing of Sabrina"
                 />

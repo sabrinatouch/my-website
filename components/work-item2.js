@@ -17,7 +17,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             as={NextLink}
             target={target}
             {...props}
-            textDecoration={active ? 'underline' : 'none'}
+            style={{ textDecoration: 'none' }}
         >
             {children}
         </Link>

@@ -1,0 +1,7 @@
+.navbar {
+    cursor: pointer;
+    &:hover {
+        color: black;
+        opacity: 0.7;
+    }
+}
