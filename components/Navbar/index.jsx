@@ -33,6 +33,8 @@ const LinkItem = ({href, children}) => {
 }
 
 const Navbar = props => {
+    const resumeURL = 'https://drive.google.com/file/d/1VueHQHO0XUqU6HjwF-ipMZiLb5s-4Moc/view?usp=drive_link'
+
     const [text, setText] = useState('Email');
     const [bgColor, setBgColor] = useState('whiteAlpha.900')
     const [hasCopied, setHasCopied] = useState(false);
@@ -100,9 +102,11 @@ const Navbar = props => {
                                     {text}
                                     {hasCopied ? <span style={{ marginLeft: '2px' }}><IoCheckmarkCircleOutline /></span> : null}
                                 </Button>
-                                <Button backgroundColor={'whiteAlpha.900'}>
-                                    Resume
-                                </Button>
+                                <a href={resumeURL} target={'_blank'}>
+                                    <Button backgroundColor={'whiteAlpha.900'}>
+                                        Resume
+                                    </Button>
+                                </a>
                             </Stack>
                         </Box>
                     </Box>
