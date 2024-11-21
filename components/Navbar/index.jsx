@@ -57,7 +57,7 @@ const Navbar = props => {
                 w="100%"
                 p={8}
             >
-                <Flex alignItems={'center'} flexWrap='wrap' gap={2}>
+                <Flex alignItems={'center'} flexWrap='wrap' gap={4}>
                     <Box display='flex'>
                         <Logo />
                         <Stack direction={{ base: 'column' }} gap={{ base: '0' }} pl={4}>

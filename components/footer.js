@@ -32,8 +32,8 @@ const Footer = props => {
             color={'blackAlpha.400'} 
             height='fit-content'
             borderRadius={'18px 18px 0px 0px'}
-            p={8}
-            mt={32}
+            py={12}
+            px={8}
         >
             <Box 
                 display="flex"
