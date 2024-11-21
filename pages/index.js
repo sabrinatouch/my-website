@@ -38,7 +38,7 @@ const Home = () => {
               <Hero2 />
             </Element>
           </Box>
-          <Box mt={32} backgroundColor={'whiteAlpha.600'} borderRadius={'40px'} py={20} px={8}>
+          <Box mt={32} backgroundColor={'whiteAlpha.900'} borderRadius={'40px'} py={20} px={8}>
             <Element name="works">
               <Works2 />
             </Element>
