@@ -17,14 +17,16 @@ const Work = () => {
         <MainLayout>
             <Box display='flex' justifyContent={'center'}>
                 <Box maxWidth='100%' mb={20} p={8} backgroundColor={'whiteAlpha.900'} borderRadius={'40px'} maxW={'6xl'}>
-                    <Image
-                        src="/banner.jpg"
-                        alt={'Cambodian Logo'}
-                        width={2000}
-                        height={1126}
-                        style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '15px' }}
-                    />
-                    <Box pt={16} pb={16}>
+                    <Box mt={8}>
+                        <Image
+                            src="/banner.jpg"
+                            alt={'Cambodian Logo'}
+                            width={2000}
+                            height={1126}
+                            style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '15px' }}
+                        />
+                    </Box>
+                    <Box pt={8} pb={16}>
                         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={{ base: '2', md: '6' }}>
                             <Heading>
                                 Cambodian Inspired Logo
