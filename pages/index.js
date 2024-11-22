@@ -32,16 +32,29 @@ const Home = () => {
     return (
       <MainLayout>
         <Box width='100%' height='100%' overflow='hidden'>
-          <Box px={8} mt={{ base: '600px', md: '150px'}} mb={{ base: '0px', md: '200px'}}>
-            <Element name="home">
-              {/* <Hero /> */}
-              <Hero2 />
-            </Element>
+          <Box mt={18} display='flex' justifyContent={'center'}>
+            <Box px={8} maxW='6xl'>
+              <Element name="home">
+                {/* <Hero /> */}
+                <Hero2 />
+              </Element>
+            </Box>
           </Box>
-          <Box mt={32} backgroundColor={'whiteAlpha.900'} borderRadius={'40px'} py={20} px={8}>
-            <Element name="works">
-              <Works2 />
-            </Element>
+          <Box display={{ base: 'block', md: 'flex' }} justifyContent={{ base: 'none', md: 'center' }}>
+            <Box width={'700px'} position={{ base: 'relative', md: 'none'}} top={{ base: '-100px', md: '0px'}}>
+                <AspectRatio ratio={1}>
+                    <Box>
+                        <ModelTest />
+                    </Box>
+                </AspectRatio>
+            </Box>
+          </Box>
+          <Box display='flex' justifyContent={'center'}>
+            <Box backgroundColor={'whiteAlpha.900'} borderRadius={'40px'} py={20} px={8} maxW='6xl'>
+              <Element name="works">
+                <Works2 />
+              </Element>
+            </Box>
           </Box>
           {/* <Box mt={32}>
             <Element name="aboutme">

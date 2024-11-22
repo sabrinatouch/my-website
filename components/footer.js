@@ -41,7 +41,7 @@ const Footer = props => {
                 alignItems="center"
                 justifyContent="space-between"
             >
-                <Text variant="sub-title" color={'blackAlpha.400'}>&copy; {new Date().getFullYear()} Sabrina Touch</Text>
+                <Text variant="smaller-sub-title" color={'blackAlpha.400'}>&copy; {new Date().getFullYear()} Sabrina Touch</Text>
                 <HStack>
                     <LinkItem
                         href="https://github.com/sabrinatouch"

@@ -42,12 +42,16 @@ const Navbar = props => {
     async function CopyToClipboard() {
         try {
             await navigator.clipboard.writeText("sabrinajindatouch@gmail.com");
-            setText('Copied');
-            setBgColor('blackAlpha.300');
             setHasCopied(true);
         } catch (error) {
             console.error(error.message);
         }
+    }
+
+    const handleClick = () => {
+        CopyToClipboard();
+        setText('Copied');
+        setBgColor('blackAlpha.300');
     }
 
     return (
@@ -90,10 +94,10 @@ const Navbar = props => {
                             </Stack>
                         </Box>
                     </Box> */}
-                    <Box align="right" zIndex={2}>
+                    <Box align="right">
                         <Box align="right" display={{ base: 'inline-block' }}>
                             <Stack direction={'row'}>
-                                <Button onClick={() => CopyToClipboard()} variant='solid' backgroundColor={bgColor}>
+                                <Button onClick={handleClick} variant='solid' backgroundColor={bgColor} style={{ cursor: 'pointer' }}>
                                     {text}
                                     {hasCopied ? <span style={{ marginLeft: '2px' }}><IoCheckmarkCircleOutline /></span> : null}
                                 </Button>
