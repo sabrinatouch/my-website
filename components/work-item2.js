@@ -47,10 +47,10 @@ const WorkItem2 = props => {
                         <Text fontSize='16px' fontWeight={'400'}>{subtitle}</Text>
                     </Box>
                     <Box display='flex' justifyContent={{ base: 'flex-start', md: 'flex-end' }} alignItems={'flex-end'} gap={1}>
-                        <Text fontSize='12px' style={{ fontWeight: '400', textTransform: 'uppercase', borderWidth: '1px', borderRadius: '25px', padding: '6px 10px', textAlign: 'center', lineHeight: '0.9'}} color={'blackAlpha.500'} borderColor={'blackAlpha.200'} alignContent={'center'} height='auto'>
+                        <Text fontSize='14px' style={{ fontWeight: '400', textTransform: 'uppercase', borderWidth: '1px', borderRadius: '25px', padding: '6px 10px', textAlign: 'center', lineHeight: '0.9'}} color={'blackAlpha.500'} borderColor={'blackAlpha.200'} alignContent={'center'} height='auto'>
                             {description}
                         </Text>
-                        <Text fontSize='12px' style={{ fontWeight: '400', textTransform: 'uppercase', borderWidth: '1px', borderRadius: '25px', padding: '6px 10px', textAlign: 'center', lineHeight: '0.9'}} color={'whiteAlpha.900'} backgroundColor={'blackAlpha.500'} alignContent={'center'} height='auto'>
+                        <Text fontSize='14px' style={{ fontWeight: '400', textTransform: 'uppercase', borderWidth: '1px', borderRadius: '25px', padding: '6px 10px', textAlign: 'center', lineHeight: '0.9'}} color={'whiteAlpha.900'} backgroundColor={'blackAlpha.500'} alignContent={'center'} height='auto'>
                             {year}
                         </Text>
                     </Box>
