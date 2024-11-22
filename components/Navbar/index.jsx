@@ -36,7 +36,7 @@ const Navbar = props => {
     const resumeURL = 'https://drive.google.com/file/d/1VueHQHO0XUqU6HjwF-ipMZiLb5s-4Moc/view?usp=drive_link'
 
     const [text, setText] = useState('Email');
-    const [bgColor, setBgColor] = useState('whiteAlpha.900')
+    const [bgColor, setBgColor] = useState('blackAlpha.200')
     const [hasCopied, setHasCopied] = useState(false);
 
     async function CopyToClipboard() {
@@ -102,7 +102,7 @@ const Navbar = props => {
                                     {hasCopied ? <span style={{ marginLeft: '2px' }}><IoCheckmarkCircleOutline /></span> : null}
                                 </Button>
                                 <a href={resumeURL} target={'_blank'}>
-                                    <Button backgroundColor={'whiteAlpha.900'}>
+                                    <Button backgroundColor={'blackAlpha.200'}>
                                         Resume
                                     </Button>
                                 </a>
