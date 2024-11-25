@@ -20,7 +20,7 @@ const Hero2 = () => {
                             Name : Sabrina Touch <br />
                             Ability : "Magic Touch" bring together UX principles and a creative eye to make digital experiences come to life.
                         </Text> */}
-                        <Heading variant="smaller-sub-title">
+                        <Heading variant="smaller-sub-title" textAlign={'center'}>
                             Creating solutions and experiences in the digital world.
                         </Heading>
                     </TransitionAnimationRight>

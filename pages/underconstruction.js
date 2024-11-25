@@ -6,9 +6,9 @@ import {
 
 const UnderConstruction = () => {
     return (
-        <Box display='flex' height='100vh' alignItems='center' justifyContent='center'>
-            <Text fontSize='32px'>
-                Sorry! This page is under code-struction.
+        <Box display='flex' height='100vh' alignItems='center' justifyContent='center' p={8}>
+            <Text fontSize={30}>
+                Sorry! <br/> This page is under code-struction.
             </Text>
         </Box>
     )
