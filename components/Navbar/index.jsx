@@ -33,7 +33,7 @@ const LinkItem = ({href, children}) => {
 }
 
 const Navbar = props => {
-    const resumeURL = 'https://drive.google.com/file/d/1VueHQHO0XUqU6HjwF-ipMZiLb5s-4Moc/view?usp=drive_link'
+    const resumeURL = 'https://drive.google.com/file/d/12QbvJeSkFEazjdSyrwvtYRlCKjAm8kg5/view?usp=drive_link'
 
     const [text, setText] = useState('Email');
     const [bgColor, setBgColor] = useState('blackAlpha.200')
