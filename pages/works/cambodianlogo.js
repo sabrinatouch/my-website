@@ -5,7 +5,7 @@ import {
     Text,
     SimpleGrid
 } from '@chakra-ui/react'
-import Image from 'next/image'
+import Image from 'next/image.js'
 import MainLayout from '../../components/layouts/main'
 
 const ThumbnailImage = chakra(Image, {

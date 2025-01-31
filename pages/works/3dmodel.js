@@ -7,7 +7,7 @@ import {
     SimpleGrid,
     chakra
 } from '@chakra-ui/react'
-import Image from 'next/image'
+import Image from 'next/image.js'
 import Section from '../../components/section'
 
 const ThumbnailImage = chakra(Image, {

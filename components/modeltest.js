@@ -24,9 +24,9 @@ export function Model(props) {
 
   const myMesh = React.useRef();
 
-  useFrame(() => {
-    myMesh.current.rotation.y = Math.sin(Date.now() * 0.00015) * Math.PI * 0.15;
-  });
+  // useFrame(() => {
+  //   myMesh.current.rotation.y = Math.sin(Date.now() * 0.00015) * Math.PI * 0.15;
+  // });
 
   return (
     <group {...props} dispose={null} ref={myMesh}>

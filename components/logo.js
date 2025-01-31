@@ -1,7 +1,7 @@
 import { Heading } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from 'next/image.js'
 
 const LogoBox = styled.span`
     line-height: 20px;

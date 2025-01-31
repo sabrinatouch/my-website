@@ -5,7 +5,8 @@ import Head from 'next/head'
 import Footer from '../footer'
 import Header from '../Header'
 import TransitionAnimationTop from '../transitionanimationtop'
-import Image from 'next/image'
+import Image from 'next/image.js'
+import Noise from '../Noise'
 
 const Main = ({ children, router }) => {
     return (
@@ -19,6 +20,7 @@ const Main = ({ children, router }) => {
                     {children}
                 </Box>
                 <Footer />
+                <Noise />
             </Box>
         </Box>
     )
