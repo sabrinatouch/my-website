@@ -16,7 +16,7 @@ const Main = ({ children, router }) => {
                 {/* <TransitionAnimationTop>
                     <Header />
                 </TransitionAnimationTop> */}
-                <Box>
+                <Box mt={12}>
                     {children}
                 </Box>
                 <Footer />

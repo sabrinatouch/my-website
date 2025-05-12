@@ -33,7 +33,7 @@ const LinkItem = ({href, children}) => {
 }
 
 const Navbar = props => {
-    const resumeURL = 'https://drive.google.com/file/d/12QbvJeSkFEazjdSyrwvtYRlCKjAm8kg5/view?usp=drive_link'
+    const resumeURL = 'https://drive.google.com/file/d/18mndIc1GW6gBLdGKCyn5yeUIAj1_-d6s/view?usp=sharing'
 
     const [text, setText] = useState('Email');
     const [bgColor, setBgColor] = useState('blackAlpha.200')
@@ -69,7 +69,7 @@ const Navbar = props => {
                                 Sabrina Touch
                             </Heading>
                             <Text fontSize='16px'>
-                                UI Developer
+                                Frontend Engineer
                             </Text>
                         </Stack>
                     </Box>
