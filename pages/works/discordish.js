@@ -33,7 +33,7 @@ const DiscordishPage = () => {
                                 An ongoing project to create a clone of Discord - a communication and messaging application connecting and creating communities online.
                                 Implementing features such as real-time messaging, file sharing, reactions, and more on the way.
                                 <br/>
-                                <br/>Try it out yourself by logging in as a guest. Don't forget to leave me a message and say hi!
+                                <br/>Try it out yourself by logging in as a guest. Don&apos;t forget to leave me a message and say hi!
                             </Text>
                         </SimpleGrid>
                     </Box>
