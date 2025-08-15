@@ -20,7 +20,7 @@ const Main = ({ children, router }) => {
                     {children}
                 </Box>
                 <Footer />
-                <Noise />
+                {/* <Noise /> */}
             </Box>
         </Box>
     )
